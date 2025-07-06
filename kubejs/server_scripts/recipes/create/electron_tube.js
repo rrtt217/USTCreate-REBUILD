@@ -5,7 +5,7 @@ ServerEvents.recipes(event =>{
         "create:electron_tube"
     ], [
         Fluid.of("ustcreate:liquid_rose_quartz", 1000),
-        "ustcreate:zinc_sheet"
+        "createdeco:zinc_sheet"
     ])
     .id("ustcreate:electron_tube_filling")
 })

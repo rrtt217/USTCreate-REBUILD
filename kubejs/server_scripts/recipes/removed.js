@@ -12,5 +12,6 @@ ServerEvents.recipes(event => {
         "create:zinc_ingot",
     ] })
     event.remove({ id: "minecraft:bread" })
+    event.remove({ type: "create:pressing", mod: "createdeco", not:{ output: "#createdeco:sheets" }})
     
 })

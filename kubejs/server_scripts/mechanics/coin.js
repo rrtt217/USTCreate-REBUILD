@@ -1,11 +1,6 @@
 const COIN_VALUE_ORDER = ["copper", "iron", "gold", "netherite"]
 const COIN_VALUE_RATIO = 32
-
 const DAILY_COIN_COUNT = 20
-
-ServerEvents.recipes(e => {
-    e.remove({ type: "create:pressing", mod: "createdeco" })
-})
 
 PlayerEvents.loggedIn(e => {
     let pData = e.player.persistentData;
