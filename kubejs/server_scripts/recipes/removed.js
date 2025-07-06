@@ -13,5 +13,5 @@ ServerEvents.recipes(event => {
     ] })
     event.remove({ id: "minecraft:bread" })
     event.remove({ type: "create:pressing", mod: "createdeco", not:{ output: "#createdeco:sheets" }})
-    
+    event.remove({ type: "create:crushing", input: "minecraft:tuff"})
 })
