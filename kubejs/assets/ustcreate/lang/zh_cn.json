@@ -1,0 +1,23 @@
+{
+    "info.ustcreate.daily_coin": "每日登录 - 获得%s硬币",
+    "commands.ustcreate.coin.success": "当前硬币数量 - §8%s §e%s §f%s §6%s",
+    "commands.ustcreate.coin.success.deposit": "成功存入%s硬币",
+    "commands.ustcreate.coin.error.not_coin": "请手持硬币或硬币堆进行存款",
+    "commands.ustcreate.coin.error.invalid_number": "无效的数字",
+    "commands.ustcreate.coin.error.not_enough_coins": "金币不足",
+    
+    "item.ustcreate.burnt_iron": "未完全熔化的铁",
+    "item.ustcreate.burnt_copper": "未完全熔化的铜",
+    "item.ustcreate.burnt_gold": "未完全熔化的金",
+    "item.ustcreate.zinc_sheet": "锌板",
+    "item.ustcreate.sulfur": "硫磺",
+
+    "fluid.ustcreate.molten_andesite_alloy": "熔融安山合金",
+        "item.ustcreate.molten_andesite_alloy_bucket": "熔融安山合金桶",
+    "fluid.ustcreate.molten_andesite": "熔融安山岩",
+        "item.ustcreate.molten_andesite_bucket": "熔融安山岩桶",
+    "fluid.ustcreate.liquid_dragen_breath": "液态龙息",
+        "item.ustcreate.liquid_dragen_breath_bucket": "桶装液态龙息",
+    "fluid.ustcreate.liquid_rose_quartz": "液态玫瑰石英",
+        "item.ustcreate.liquid_rose_quartz_bucket": "液态玫瑰石英桶"
+}

@@ -1,0 +1,7 @@
+{
+    "info.ustcreate.daily_coin": "Daily Login - Get %s coins",
+    "commands.ustcreate.coin.success": "Current coin amount - §8%s §b%s §e%s §f%s §6%s",
+    "commands.ustcreate.coin.error.not_coin": "Please hold a coin or a stack of coins to deposit",
+    "commands.ustcreate.coin.error.invalid_number": "Invalid number",
+    "commands.ustcreate.coin.error.not_enough_coins": "Not enough coins"
+}
