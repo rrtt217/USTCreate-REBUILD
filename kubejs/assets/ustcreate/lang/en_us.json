@@ -1,7 +1,12 @@
 {
-    "info.ustcreate.daily_coin": "Daily Login - Get %s coins",
-    "commands.ustcreate.coin.success": "Current coin amount - §8%s §b%s §e%s §f%s §6%s",
-    "commands.ustcreate.coin.error.not_coin": "Please hold a coin or a stack of coins to deposit",
-    "commands.ustcreate.coin.error.invalid_number": "Invalid number",
-    "commands.ustcreate.coin.error.not_enough_coins": "Not enough coins"
+    "commands.ustcreate.deposit.success": "Successfully deposited %s coins",
+    "commands.ustcreate.deposit.error.not_coin": "Please hold a coin or a stack of coins to deposit",
+    "commands.ustcreate.withdraw.success": "Successfully withdrawn coins for shopping list",
+    "commands.ustcreate.withdraw.info.no_need_withdraw": "No coins need to be withdrawn from shopping list",
+    "commands.ustcreate.withdraw.error.invalid_number": "Invalid number",
+    "commands.ustcreate.withdraw.error.not_enough_coins": "Not enough coins",
+    "commands.ustcreate.withdraw.error.not_shopping_list": "Please hold a shopping list to withdraw",
+    "key.group.ustcreate": "USTCreate Modpack",
+    "key.ustcreate.coin.deposit": "Deposit All Coins",
+    "key.ustcreate.coin.withdraw": "Withdraw Coins for Shopping List"
 }

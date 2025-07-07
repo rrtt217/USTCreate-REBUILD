@@ -1,11 +1,15 @@
 {
-    "info.ustcreate.daily_coin": "每日登录 - 获得%s硬币",
-    "commands.ustcreate.coin.success": "当前硬币数量 - §8%s §e%s §f%s §6%s",
-    "commands.ustcreate.coin.success.deposit": "成功存入%s硬币",
-    "commands.ustcreate.coin.error.not_coin": "请手持硬币或硬币堆进行存款",
-    "commands.ustcreate.coin.error.invalid_number": "无效的数字",
-    "commands.ustcreate.coin.error.not_enough_coins": "金币不足",
-    
+    "commands.ustcreate.deposit.success": "成功存入%s硬币",
+    "commands.ustcreate.deposit.error.not_coin": "请手持硬币或硬币堆进行存款",
+    "commands.ustcreate.withdraw.success": "成功提取购物清单所需的硬币",
+    "commands.ustcreate.withdraw.info.no_need_withdraw": "购物清单中没有缺失的硬币",
+    "commands.ustcreate.withdraw.error.invalid_number": "无效的数字",
+    "commands.ustcreate.withdraw.error.not_enough_coins": "硬币不足",
+    "commands.ustcreate.withdraw.error.not_shopping_list": "请手持购物清单进行提取",
+    "key.group.ustcreate": "USTCreate 整合包",
+    "key.ustcreate.coin.deposit": "存入所有硬币",
+    "key.ustcreate.coin.withdraw": "提取购物清单所需硬币",
+
     "item.ustcreate.burnt_iron": "未完全熔化的铁",
     "item.ustcreate.burnt_copper": "未完全熔化的铜",
     "item.ustcreate.burnt_gold": "未完全熔化的金",
