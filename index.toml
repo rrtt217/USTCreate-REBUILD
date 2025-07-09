@@ -169,14 +169,6 @@ file = "kubejs/startup_scripts/key_registry.js"
 hash = "47b781bf039a8264558d4dd27e23ebcefc6a9167cb068961eef8398dfcf3ad0f"
 
 [[files]]
-file = "mods/JustEnoughResources-1.20.1-1.4.0.247.jar"
-hash = "cfea462b5ab4f15b38da6003f7d151bdbb68fa5af30084ae81b8ac0970d7aaae"
-
-[[files]]
-file = "mods/[料理乐事] cuisinedelight-1.1.17.jar"
-hash = "ee9a42c6ac2ac77c4309649582aca36b4d6c451e9a2878e9d0bfc87bd7ee9447"
-
-[[files]]
 file = "mods/alltheleaks.pw.toml"
 hash = "e5ebb747553799e65aa1a2222ea07e24a151f269e1388c4726b752c098b43fee"
 metafile = true
