@@ -1,6 +1,18 @@
 hash-format = "sha256"
 
 [[files]]
+file = "build/build-curseforge-client.sh"
+hash = "09be116d9405602e254d0520f3cb3c1687ff60e235b81b1fb7dfc25530a36dbd"
+
+[[files]]
+file = "build/build-curseforge-server.sh"
+hash = "2218d2daea63817f1f37050bb525164890aeb75ad87d001052b43861eca9ac5c"
+
+[[files]]
+file = "build/build-modrinth.sh"
+hash = "d98d26801d9748bbf1011e3d9dd64e1e59651621fffa96fef3ccc7e1bfe06f01"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
