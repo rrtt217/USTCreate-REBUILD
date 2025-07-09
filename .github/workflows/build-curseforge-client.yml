@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+    - main
+    - feat/*
+jobs:
+  build-curseforge-client:
+    name: Build Curseforge Client Pack
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4.2.2
+    - name: Set Up Go
+      uses: actions/setup-go@v5.5.0
+    - name: Set Up Packwiz
+      run: go install github.com/packwiz/packwiz@latest
+    - name: Build Curseforge Client Pack
+      shell: bash
+      run: ./build/build-curseforge-client.sh
+    - name: Upload The Pack
+      uses: actions/upload-artifact@v4.6.2
+      with: 
+        path: .build/*
