@@ -1,0 +1,13 @@
+name = "Create Ratatouille"
+filename = "create_ratatouille-1.20.1-1.2.2 for Create6.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "97f5537c055f148e4b8de91b75ccfec4823b33c2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6650419
+project-id = 983234
