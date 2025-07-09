@@ -10,8 +10,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4.2.2
-    - name: Set Up Go
-      uses: actions/setup-go@v5.5.0
     - name: Set Up Packwiz
       run: go install github.com/packwiz/packwiz@latest
     - name: Build Curseforge Client Pack
