@@ -1,0 +1,13 @@
+name = "FluidJS"
+filename = "fluidjs-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e3c41ea49a05eff1e0448cb178973ba8661bd6ff"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6732776
+project-id = 1296499

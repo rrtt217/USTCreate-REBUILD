@@ -919,3 +919,5 @@
 /.vscode/
 /.idea/
 /resourcepacks/
+/packwiz
+/.build
