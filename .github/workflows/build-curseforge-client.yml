@@ -16,7 +16,7 @@ jobs:
       shell: bash
       run: ./build/build-curseforge-client.sh
     - name: List The WorkingDir
-      run: ls -R
+      run: ls -Ra
     - name: Upload The Pack
       uses: actions/upload-artifact@v4.6.2
       with: 
