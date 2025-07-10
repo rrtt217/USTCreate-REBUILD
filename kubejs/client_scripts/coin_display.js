@@ -4,8 +4,8 @@ const COIN_VALUE_RATIO = 16;
 let PlayerCoinManager = Java.loadClass("com.ustcmc.ustcreate.core.PlayerCoinManager");
 
 PlayerEvents.tick(e => {
-    let coin_count = { remove: true };
-    let coin_detail = { remove: true };
+    let coin_count = { type: "text", remove: true };
+    let coin_detail = { type: "text", remove: true };
     if (e.player.isShiftKeyDown()) {
         let count = PlayerCoinManager.getCoins(e.player);
         coin_count = {
