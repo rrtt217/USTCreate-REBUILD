@@ -226,6 +226,11 @@ hash = "058699e4832d0cf5396c5ea29244100f0c0e39a8d7aa5b64c2afdcc3cb8c8145"
 metafile = true
 
 [[files]]
+file = "mods/caramel-chat.pw.toml"
+hash = "4ae50c88d3b995e89ef167b4080bc05b5bd6bdb52c3f802807da3495bf291d50"
+metafile = true
+
+[[files]]
 file = "mods/chat-heads.pw.toml"
 hash = "3354f731d77d7ac8e2b67ff75fad3269ba5aeed3c3f9b054e53faaa10081941d"
 metafile = true
@@ -241,6 +246,11 @@ hash = "e3173aaa4e9078ad7ace2b9ef43ce15ce9919c0b566d8830cea87264f92b3a6a"
 metafile = true
 
 [[files]]
+file = "mods/contingameime.pw.toml"
+hash = "48317c2b0dde003f0370dc76b2387b5d13e4b38cafddeb5acb26630584423160"
+metafile = true
+
+[[files]]
 file = "mods/controlling.pw.toml"
 hash = "cf8c5f2a139a2571d0d4b8be2b7463255cca721ae4a5741ec71595b7ab530e71"
 metafile = true
@@ -253,6 +263,11 @@ metafile = true
 [[files]]
 file = "mods/cosmetic-armor-reworked.pw.toml"
 hash = "cfa8aa9c0437721dab2057c932c9cf8ec3d3a11f672040601305238d13df85e8"
+metafile = true
+
+[[files]]
+file = "mods/create-better-fps.pw.toml"
+hash = "2dce962341375002f5937a871778cd0fc06d6bda41a3bdba8940a611b25dcd32"
 metafile = true
 
 [[files]]
@@ -356,6 +371,11 @@ hash = "fa6e35c376181fa82ad33b9cb4c20382a0effd7eb09a06107dcc884b98f49ff2"
 metafile = true
 
 [[files]]
+file = "mods/flerovium.pw.toml"
+hash = "eeda9463b59d354bb30d0f67d5ffa80689232205969b4e0db742bdf1b42a52ca"
+metafile = true
+
+[[files]]
 file = "mods/fluidjs.pw.toml"
 hash = "72a986978de8b8577cfef2031bc37c3f3d619743cf23dc024b2df53a62ce24ed"
 metafile = true
@@ -378,6 +398,16 @@ metafile = true
 [[files]]
 file = "mods/gravestone-mod.pw.toml"
 hash = "f532de266ab649ff46f440d6f315eeef677a9176c9fb0a70529c44e38a965e9b"
+metafile = true
+
+[[files]]
+file = "mods/imblocker.pw.toml"
+hash = "1cd5ba2b3278649b7e2a394485e2f2c8ec38c4feae262b6465a0a0fcca1ca24d"
+metafile = true
+
+[[files]]
+file = "mods/immediatelyfast.pw.toml"
+hash = "591082f1380a5542d2d1acb537d8d53ee26b5492a0b757d086729e926465eca8"
 metafile = true
 
 [[files]]
