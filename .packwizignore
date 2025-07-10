@@ -1,6 +1,0 @@
-#exclude build
-.build/
-build/
-#exclude git(hub) and vscode stuffs
-.github/
-.vscode/

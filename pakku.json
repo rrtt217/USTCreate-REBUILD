@@ -1,0 +1,14 @@
+{
+    "name": "USTCreate-REBUILD-Unoffical",
+    "version": "0.0.1",
+    "overrides": [
+        "kubejs/assets",
+        "kubejs/startup_scripts"
+    ],
+    "client_overrides": [
+        "kubejs/client_scripts"
+    ],
+    "server_overrides": [
+        "kubejs/server_scripts"
+    ]
+}
