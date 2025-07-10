@@ -1,6 +1,28 @@
 hash-format = "sha256"
 
 [[files]]
+file = "README.md"
+hash = "5748068628250310e4e79483326301575f02e05986e48d4a410bfde4285ba04c"
+
+[[files]]
+file = "bsl-shaders.pw.toml"
+hash = "c384d1c117331920a44021339b534c9129286b78ccdf54cda7a41a3ce75529e4"
+metafile = true
+
+[[files]]
+file = "complementary-unbound.pw.toml"
+hash = "0ecc8df3b8cc35aaae4ea7757417a8050e99657e683e7b7e05410aeedfc28d0b"
+metafile = true
+
+[[files]]
+file = "config/inventoryhud-client.toml"
+hash = "2cb16e62219bb7de61fa9407bb0e1b0d923ec7bd46680973723970212bf15f60"
+
+[[files]]
+file = "config/tips.json"
+hash = "d2bb421105d8f163c9d970e7c792bf8c42f90c59c9da1f80c199617976ac0678"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -190,7 +212,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-advancements.pw.toml"
-hash = "11cbc9a17ebde92c896e48d802579132919271979bc3b63f08ce47fa9b42b4c2"
+hash = "7ccd4e76dd67427039d56d0ca61bbb352cd96e28d4956dda9b26e2db301e36bc"
 metafile = true
 
 [[files]]
@@ -205,7 +227,7 @@ metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
-hash = "d0717dc2e330717a01db528565269a6706ea308deb735969dd42cd479f25abea"
+hash = "3354f731d77d7ac8e2b67ff75fad3269ba5aeed3c3f9b054e53faaa10081941d"
 metafile = true
 
 [[files]]
@@ -220,7 +242,7 @@ metafile = true
 
 [[files]]
 file = "mods/controlling.pw.toml"
-hash = "1e56f528d8e21b0cf9c52c3d6deea2a4eafa408170b39a070195dbf66617f373"
+hash = "cf8c5f2a139a2571d0d4b8be2b7463255cca721ae4a5741ec71595b7ab530e71"
 metafile = true
 
 [[files]]
@@ -295,7 +317,12 @@ metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
-hash = "88dc067308257ff327bbd7ab941b1d070269e3375fdd556760d448207994d83a"
+hash = "beb9d476046141e80148fd83a401cf70f82641c30163e223e9ba7d204b00d729"
+metafile = true
+
+[[files]]
+file = "mods/distant-horizons.pw.toml"
+hash = "d8625ce411e5af73b9ec87ea98764c66e8db8037533a185d362f29549e60788a"
 metafile = true
 
 [[files]]
@@ -305,12 +332,12 @@ metafile = true
 
 [[files]]
 file = "mods/dynamiclights-reforged.pw.toml"
-hash = "8f2270a50a633db681826cbfb691e6efdb25e1e0c4702125c13d525b52fe229f"
+hash = "00a06884a4f8854fad85f2456c1d6c53ee09cc5e545a35e41cad24e82907a1ab"
 metafile = true
 
 [[files]]
 file = "mods/embeddium.pw.toml"
-hash = "a1575677daaaf6ea6dac12e5a10073e34025e5ca2c35b6d36ad4a5a0edbc0e82"
+hash = "a74b2d65c286896335b454f61f18be630d0f13767626ebb118584907d1d37112"
 metafile = true
 
 [[files]]
@@ -320,7 +347,7 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "82787d227d3ff84be0087828dfbd9b87f20fac75a87edb43b33441b0e5d9c175"
+hash = "c2ca27c3e09a153a61b5aa568aca03b31cbc6ab14d6fe3bd6181269064923b95"
 metafile = true
 
 [[files]]
@@ -370,7 +397,7 @@ metafile = true
 
 [[files]]
 file = "mods/inventory-hud-forge.pw.toml"
-hash = "7cfc0e01f487f385b420af27e14dcdf1ce6f912c9ffecfa933fcdbb93c21e279"
+hash = "9928c8f1f67cdc3ccdddef9fe63831a328b44dca1f6be9ebc086fc7d25747826"
 metafile = true
 
 [[files]]
@@ -385,7 +412,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei-integration.pw.toml"
-hash = "06476837027569174dc086ae42b7c8055814f9b8d9f1376b862fc4c54e96e0bd"
+hash = "442cae37babbae85c15c5b33d03ad40587d5c780fccd9f5baddfacceb5167e4b"
 metafile = true
 
 [[files]]
@@ -395,7 +422,7 @@ metafile = true
 
 [[files]]
 file = "mods/just-enough-characters.pw.toml"
-hash = "9ffdd32c4b194d29d71bfc885644a069f40f24d07d05e3e44d79db591b8be259"
+hash = "74d97ed7a678699fea62b4010c699f1d3514363f96e807a14c368edf20c3f9ac"
 metafile = true
 
 [[files]]
@@ -405,7 +432,7 @@ metafile = true
 
 [[files]]
 file = "mods/keybindjs.pw.toml"
-hash = "a1d2257885461c49ef8a26a4f6059463cebdd2288b83144e96c49b28846e3595"
+hash = "da4fc6e90f0512a70d11353c1f74c6e78515c09197f97f23c82be2702fdd5916"
 metafile = true
 
 [[files]]
@@ -445,12 +472,12 @@ metafile = true
 
 [[files]]
 file = "mods/modern-ui.pw.toml"
-hash = "8cb56a0d23e8e4e670cb0e8779227fb566c15c75474a4618f85790b1b987482e"
+hash = "deddd6639cd0ef6c262fa2d789abf1b96e08195a6f7667ab914b2325b5a43851"
 metafile = true
 
 [[files]]
 file = "mods/mouse-tweaks.pw.toml"
-hash = "e72f73611904e14d915418f0e3c6cb483cdc600e211375c2eceb393fec5b80f1"
+hash = "c17b9de2050b52f12368cea16836e8c6ac43be9683b2fc4755a9b3d4a60fa67b"
 metafile = true
 
 [[files]]
@@ -480,7 +507,7 @@ metafile = true
 
 [[files]]
 file = "mods/oculus.pw.toml"
-hash = "5ef885f9912ff6aa73db254b63a3cd22520f06261bc3c38e7c92f449806a9044"
+hash = "200f79b635a087841698c85ac7028f0a1fac2cc4ffae1d59ff3f07a94abfe70e"
 metafile = true
 
 [[files]]
@@ -515,7 +542,7 @@ metafile = true
 
 [[files]]
 file = "mods/searchables.pw.toml"
-hash = "2cb8dd9a3944a6430b49916a4fe1b6cf0bd7efd907054f8e679a02717149404f"
+hash = "a84f8e46ba2d693bfbdec682ca66213e2e0783395c9af34f8b22d460d3952a4c"
 metafile = true
 
 [[files]]
@@ -565,12 +592,12 @@ metafile = true
 
 [[files]]
 file = "mods/tips.pw.toml"
-hash = "d27eb9461fea1b6c61eba953194f197e3de63a24d1801ec96dc6d54bc798d9a5"
+hash = "b1461eb88a7a08c52df58dfedb91c6343eaf7ce1d1613ce0bc675924c49a6c14"
 metafile = true
 
 [[files]]
 file = "mods/trashslot.pw.toml"
-hash = "7d82589ef537c4a134ec1c5901019052c3fd3fd1a6051500ff3f732339e801e0"
+hash = "3a575d6936f656b8df493259e6dd30d1a52bd7760abd0a549658079ca99e37ab"
 metafile = true
 
 [[files]]
@@ -584,7 +611,7 @@ metafile = true
 
 [[files]]
 file = "mods/world-preview.pw.toml"
-hash = "54f3ef953e9217b9a7cc8426b7d4c9939a3c994948f077afd8e36e66d53fd1ee"
+hash = "d24c10cf381c260892dc1c7c8283c40ffe70187bd8db2e7742ef9bcf7dec219c"
 metafile = true
 
 [[files]]
@@ -594,7 +621,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeroplus.pw.toml"
-hash = "42ede95877651e69a71b0593b6591afc1f017aa64821bd8c05dba7f4ccb2da8a"
+hash = "c66744196124997eb06bb47fd616da74d321bf44dd83204dcacc0f8746069a67"
 metafile = true
 
 [[files]]
@@ -606,3 +633,12 @@ metafile = true
 file = "mods/xaeros-world-map.pw.toml"
 hash = "fb4358298d2a0733d2786e1c532d96babb9dd3a376c465fb7a51f9452e902a4c"
 metafile = true
+
+[[files]]
+file = "shaderpacks/photon-shader.pw.toml"
+hash = "3add1378e964947556ec43ebc86a431981cfa67c9b95353105d7f48deb58ff3d"
+metafile = true
+
+[[files]]
+file = "tools/replace.sh"
+hash = "2c61794a71952e1d7eb2d454479af1c4942745eec2249b924c9466f3322d1bbd"

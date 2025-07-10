@@ -919,7 +919,6 @@
 /.vscode/
 /.idea/
 /resourcepacks/
-/packwiz
 /.build
 /build/.cache
 /build/curseforge
