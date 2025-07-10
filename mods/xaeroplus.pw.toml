@@ -1,6 +1,6 @@
 name = "XaeroPlus"
 filename = "XaeroPlus-2.27.2+forge-1.20.1-WM1.39.9-MM25.2.6.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"
