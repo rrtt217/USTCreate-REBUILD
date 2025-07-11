@@ -4,19 +4,19 @@ on:
     - main
     - feat/*
 jobs:
-  build-curseforge-client:
-    name: Build Curseforge Client Pack
+  build:
+    name: Build All Packs
     runs-on: ubuntu-22.04
 
     steps:
     - uses: actions/checkout@v4.2.2
-    - name: Set Up Packwiz
-      run: go install github.com/packwiz/packwiz@latest
     - name: Build Curseforge Client Pack
       shell: bash
       run: ./build/build-curseforge-client.sh
-    - name: List The WorkingDir
-      run: ls -Ra
+    - name: Build Curseforge Server Pack
+      run: ./build/build-curseforge-server.sh
+    - name: Build Modrinth Pack
+      run: ./build/build-modrinth.sh
     - name: Upload The Pack
       uses: actions/upload-artifact@v4.6.2
       with: 
