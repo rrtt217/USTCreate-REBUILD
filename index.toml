@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "0a754e74daf3902f76673064f0e9facd45507f1a1b8da8f0cbab20fb1d696b20"
+hash = "216f2a240a0327624ca699401996c3bdf673cdccb639f46ae85cb97d63b98f48"
 
 [[files]]
 file = "config/DistantHorizons.toml"
@@ -360,7 +360,7 @@ metafile = true
 
 [[files]]
 file = "mods/dynamic-lights.pw.toml"
-hash = "ea969a2c6d77b5e7c8bd8ab8fe52c0c46de676a9cc517f014965699d90c5ed92"
+hash = "b9a87253e12e279530153f56dab7c26610151b156a80c9d9b182252fcfb899b0"
 metafile = true
 
 [[files]]
@@ -484,7 +484,7 @@ metafile = true
 
 [[files]]
 file = "mods/kotlin-for-forge.pw.toml"
-hash = "7ea985404ee4cc9082472c6869ec146309f526e395361b39f2f4c1a43506c41d"
+hash = "41233c52aa943770e3ae43ad471dc8fc900c2b18f40cfbc5ee9fa2c1e8fd443a"
 metafile = true
 
 [[files]]
