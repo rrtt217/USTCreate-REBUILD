@@ -3,11 +3,11 @@ filename = "kubejs-create-forge-2001.3.0-build.8.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "cbeb6643d1cea979a7e01c87cfb08b9210a1c393"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/T38eAZQC/versions/5vppyenb/kubejs-create-forge-2001.3.0-build.8.jar"
+hash-format = "sha512"
+hash = "1c6fa2b3dc52683bdf124ebfc507ad5adb5f1ceb147181466be4e495bc6eab1411976911477df538369ff2529607cb73bf3b4a05a8ed2f24804f4891d7635981"
 
 [update]
-[update.curseforge]
-file-id = 6265498
-project-id = 429371
+[update.modrinth]
+mod-id = "T38eAZQC"
+version = "5vppyenb"

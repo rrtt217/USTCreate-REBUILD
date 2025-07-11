@@ -3,11 +3,11 @@ filename = "netmusic-forge-1.20.1-1.1.7-hotfix.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "a5fa07b9cfdfea293241d89a089f89f66547a66b"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/gKNuqaQq/versions/UFJAx2ko/netmusic-forge-1.20.1-1.1.7-hotfix.jar"
+hash-format = "sha512"
+hash = "91a0fd1dcf06e09181d6936533e8089d6a7f8de30bfc638340271b7ac30146c928db9233ee518af6d1f13250819a6fa71e270177ec510727b0a8af283ae53c52"
 
 [update]
-[update.curseforge]
-file-id = 6659790
-project-id = 978569
+[update.modrinth]
+mod-id = "gKNuqaQq"
+version = "UFJAx2ko"

@@ -1,18 +1,13 @@
 name = "RenderScale"
 filename = "RenderScale-forge-1.20.1-1.0.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "818391dd2b5ac89f5af7d16a8634df7f85837580"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/Va8PJBFX/versions/wzrQQ6Z9/RenderScale-forge-1.20.1-1.0.jar"
+hash-format = "sha512"
+hash = "665524b033d2deb3f4d06f83c96cf1531099d2ec26474dd5a0b472c7051ae7ea32c294668fcd11a5b46567709d2f3506cbbc93726b24acb10dfeacca122dd09f"
 
 [update]
-[update.curseforge]
-file-id = 6056532
-project-id = 1172416
-
-[option]
-optional = true
-default = false
-description = "通过降低分辨率来提高帧数。"
+[update.modrinth]
+mod-id = "Va8PJBFX"
+version = "wzrQQ6Z9"

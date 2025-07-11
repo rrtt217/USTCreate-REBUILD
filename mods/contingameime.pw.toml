@@ -1,18 +1,13 @@
 name = "ContingameIME"
 filename = "ContingameIME-1.0.7-1.20.1-forge.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "d4b780795cc111b11c84bbf4cfb05a72f36904e1"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/5Z2YdwIT/versions/V0QAGw3U/ContingameIME-1.0.7-1.20.1-forge.jar"
+hash-format = "sha512"
+hash = "212a22430f78e570f3ad17cef818737885221fb61a8cba0689451e5975003d3a5f92f8113aa29fb37cea34020d3a04c0bed7e669ffba05af7d4d3a3b55ba47ce"
 
 [update]
-[update.curseforge]
-file-id = 5086866
-project-id = 835640
-
-[option]
-optional = true
-default = false
-description = "让游戏中可以显示输入法的候选词框，并避免了在打开/关闭输入框时反复切换输入法的烦恼。仅限Windows平台，非Windows平台不要选择。"
+[update.modrinth]
+mod-id = "5Z2YdwIT"
+version = "V0QAGw3U"

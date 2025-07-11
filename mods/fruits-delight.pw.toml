@@ -3,11 +3,11 @@ filename = "fruitsdelight-1.0.22.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "d7315736e324c6b9c74f659804a4eaced3bf3b63"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/g6sbyCTu/versions/gSG5A9TX/fruitsdelight-1.0.22.jar"
+hash-format = "sha512"
+hash = "bb1243cfa94dff5292e4ec2760c1e78bd217679753aa7625c1ac5b413b2a97b08e18912215c3f656fb04aed51f1576ffc289c436adca86177db6f295019be29c"
 
 [update]
-[update.curseforge]
-file-id = 6500940
-project-id = 943774
+[update.modrinth]
+mod-id = "g6sbyCTu"
+version = "gSG5A9TX"

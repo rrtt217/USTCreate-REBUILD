@@ -3,11 +3,11 @@ filename = "XaeroPlus-2.27.2+forge-1.20.1-WM1.39.9-MM25.2.6.jar"
 side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "7b831d7957f6eb115765f8779ec5a98bb32fbb03"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/EnPUzSTg/versions/oHlZI64J/XaeroPlus-2.27.2%2Bforge-1.20.1-WM1.39.9-MM25.2.6.jar"
+hash-format = "sha512"
+hash = "2c79dc64c35e0ae87563322df969648ded6f2e21a1ee9d706de8d7d729a510a2535015ba8d993fcd3d2595f23001aa2c153404adde2e19ac85891b0ba91748ff"
 
 [update]
-[update.curseforge]
-file-id = 6705929
-project-id = 866084
+[update.modrinth]
+mod-id = "EnPUzSTg"
+version = "oHlZI64J"
