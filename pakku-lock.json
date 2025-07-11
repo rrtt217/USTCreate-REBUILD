@@ -2081,7 +2081,7 @@
             "id": {
                 "curseforge": "1296499"
             },
-            "redistributable": false,
+            "redistributable": true,
             "files": [
                 {
                     "type": "curseforge",
