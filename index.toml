@@ -484,6 +484,11 @@ hash = "9e682ce4a481bd0da76375037951d2e104513421e3da640ec0c3f027f498a83f"
 metafile = true
 
 [[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "40026875ee9b7d25a4ece48faa2b70a338100e87a689d5a8d4ba1ee608b878f6"
+metafile = true
+
+[[files]]
 file = "mods/kubejs-additions.pw.toml"
 hash = "748fd9bda115507dbe486c90886f449723c60b59529cc4c103489c2326c09528"
 metafile = true
