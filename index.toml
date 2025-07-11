@@ -234,8 +234,8 @@ hash = "2bcea8e16d358942a8f8b8cf6e39cc303d90fac29b1b3ecb8033bd214d4afa0f"
 metafile = true
 
 [[files]]
-file = "mods/bookshelf.pw.toml"
-hash = "058699e4832d0cf5396c5ea29244100f0c0e39a8d7aa5b64c2afdcc3cb8c8145"
+file = "mods/bookshelf-lib.pw.toml"
+hash = "02062a6b61e230e7debaf1c03d5e1e7203e427588fceb9f3d6ef8cad8062397e"
 metafile = true
 
 [[files]]
@@ -389,9 +389,8 @@ hash = "7e4d086c43ca799a4974051db465a8f8c63c912137ef98557047a1e3f7068d8d"
 metafile = true
 
 [[files]]
-file = "mods/fluidjs.pw.toml"
-hash = "72a986978de8b8577cfef2031bc37c3f3d619743cf23dc024b2df53a62ce24ed"
-metafile = true
+file = "mods/fluidjs-1.1.1.jar"
+hash = "798e806d9c502b56bebc05ac8fdaa1c284d5b4da1a8364971e7c8d48a4ce9f91"
 
 [[files]]
 file = "mods/fruits-delight.pw.toml"
@@ -414,8 +413,8 @@ hash = "505f977e07c140709abf88b890313a65b01116a1ee1b0c15f0ef479cbf00cd89"
 metafile = true
 
 [[files]]
-file = "mods/imblocker.pw.toml"
-hash = "a349f964732ad536b49d00ba4768d6ade875a849e8fc94abc410e7a1628fd2eb"
+file = "mods/imblocker-original.pw.toml"
+hash = "742e25d3e66a4f85b2b742711bb0b755cc9106c1ac90f870324da783e6f8bd7e"
 metafile = true
 
 [[files]]
@@ -524,6 +523,11 @@ hash = "9d88f59f7c3e8aa79561c758e9eeb92f05cca0d652979ab593768f87607351ad"
 metafile = true
 
 [[files]]
+file = "mods/moonlight.pw.toml"
+hash = "93261366422f3358126df561a57ae6e2d93bd11600d9fbaba5f866ec52a319f0"
+metafile = true
+
+[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "679fa8f3b49b9ed3fbcb29d6ccdb99bce465faa01f9cec000464ac8d4fbe134f"
 metafile = true
@@ -596,11 +600,6 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "b8c7497acbf4890b4609b6b20de7affdd3482fc99af975d9ff6b29c075e1d8a7"
-metafile = true
-
-[[files]]
-file = "mods/selene.pw.toml"
-hash = "c66c1efe7f629083bcaff3920285deb62ab533b7713d57111e6c2cec3ab6304f"
 metafile = true
 
 [[files]]
