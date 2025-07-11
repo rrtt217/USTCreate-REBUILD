@@ -22,7 +22,7 @@ hash = "d2bb421105d8f163c9d970e7c792bf8c42f90c59c9da1f80c199617976ac0678"
 
 [[files]]
 file = "datapacks/tectonic.pw.toml"
-hash = "9a8b5ebc397998e3b6807293976d9091549068cd7fea3db4e46f62729a77a99b"
+hash = "9d222cc525ca5d05ea86018320ba5552820fa555713da63cf738441bc455aada"
 metafile = true
 
 [[files]]

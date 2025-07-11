@@ -11,3 +11,8 @@ hash = "7714d885caa729036e8e59ab6258c75726898b6be1833d796248a205653aba13fa463741
 [update.modrinth]
 mod-id = "WMDesFsZ"
 version = "2AzTAzY2"
+
+[option]
+optional = true
+default = false
+description = "跨平台的输入法修复工具，避免了在打开/关闭输入框时反复切换输入法的烦恼。与ContingameIME冲突。"

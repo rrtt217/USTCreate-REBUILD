@@ -11,3 +11,8 @@ hash = "665524b033d2deb3f4d06f83c96cf1531099d2ec26474dd5a0b472c7051ae7ea32c29466
 [update.modrinth]
 mod-id = "Va8PJBFX"
 version = "wzrQQ6Z9"
+
+[option]
+optional = true
+default = false
+description = "通过降低分辨率来提高帧数。"

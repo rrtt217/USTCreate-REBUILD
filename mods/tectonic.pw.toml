@@ -11,3 +11,8 @@ hash = "9db833326e38ed224c4b52656ee1a28c4068a624c83b60a5dfc9369fb27c492ad4766f4e
 [update.modrinth]
 mod-id = "lWDHr9jE"
 version = "hxUteWC1"
+
+[option]
+optional = true
+default = true
+description = "地形修改模组，服务端需装。如果需要超平坦，请不要使用该模组，改而使用数据包形式。"

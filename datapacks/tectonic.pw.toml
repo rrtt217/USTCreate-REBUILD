@@ -1,13 +1,13 @@
 name = "Tectonic"
-filename = "tectonic-datapack-v2.2.1.zip"
+filename = "tectonic-datapack-v2.2.2.zip"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "d70e27d5b437937396224c4092f777c37a423531"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/lWDHr9jE/versions/stwi8gQ3/tectonic-datapack-v2.2.2.zip"
+hash-format = "sha512"
+hash = "3d95d2d04700a1f13640ab86b9169580dfed8dd6638f6b8dfb6c3598a7f50a1e6d47765f474b5d0a9703649afdc56aeb3ac325534b5e997ae50e89da60ca0648"
 
 [update]
-[update.curseforge]
-file-id = 5180269
-project-id = 986802
+[update.modrinth]
+mod-id = "lWDHr9jE"
+version = "stwi8gQ3"

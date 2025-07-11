@@ -11,3 +11,8 @@ hash = "14f5548cffa24fabdcfce6626fc813db42e28350a126833a54e1c54e13e6b393e232b5a0
 [update.modrinth]
 mod-id = "uCdwusMi"
 version = "vSDePnsB"
+
+[option]
+optional = true
+default = false
+description = "在 Minecraft 的默认视距之外添加简化过的地形，提升性能并实现更远的可视距离。注意：视距过大时性能占用仍然很大，请量力而行。"
