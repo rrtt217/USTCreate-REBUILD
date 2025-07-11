@@ -1,6 +1,6 @@
 name = "Dynamic Lights"
 filename = "dynamiclights-v1.8.6-mc1.17-1.21.5-mod.jar"
-side = "both"
+side = "client"
 
 [download]
 url = "https://cdn.modrinth.com/data/7YjclEGc/versions/CiZh7gTT/dynamiclights-v1.8.6-mc1.17-1.21.5-mod.jar"

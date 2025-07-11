@@ -584,7 +584,7 @@ metafile = true
 
 [[files]]
 file = "mods/radium.pw.toml"
-hash = "bbdd40b650286973d44b1931d4b8c4bcc02b02f2c5583545709347503bd13057"
+hash = "61d2377aa53184a5461f8691e7750546fdc06ef2b47b798a090914f307a8b2bf"
 metafile = true
 
 [[files]]
@@ -693,6 +693,16 @@ hash = "e7a57f648ee38d067bc3eb336d4b350abbc9f6cc871093c8988a6feca43cc384"
 [[files]]
 file = "servers.dat"
 hash = "89136dc4e0e970f2835beae40dc635c6141eccd4f700cedc7a6efdfebba59c63"
+
+[[files]]
+file = "shaderpacks/bsl-shaders.pw.toml"
+hash = "d30923bf5cfb4988a372508cb461d8077609d79a38d0b170785804c7ad15f16e"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-unbound.pw.toml"
+hash = "9025311f42fe8ab581987962c9c6b3ec5a50f5afc803e9d867dc580cb0b66190"
+metafile = true
 
 [[files]]
 file = "shaderpacks/photon-shader.pw.toml"
