@@ -15,6 +15,12 @@ jobs:
       run: ./build/build-curseforge-client.sh
     - name: Build Curseforge Server Pack
       run: ./build/build-curseforge-server.sh
+    - uses: actions/checkout@v4.2.2
+      with: 
+        ref: 'modrinth'
+    - name: Build Modrinth Pack
+      shell: bash
+      run: ./build/build-modrinth.sh
     - name: Upload The Pack
       uses: actions/upload-artifact@v4.6.2
       with: 
