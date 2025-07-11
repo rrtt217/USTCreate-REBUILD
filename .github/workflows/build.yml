@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+    - main
+    - feat/*
+jobs:
+  build:
+    name: Build All Packs
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4.2.2
+    - name: Build Curseforge Client Pack
+      shell: bash
+      run: ./build/build-curseforge-client.sh
+    - name: Build Curseforge Server Pack
+      run: ./build/build-curseforge-server.sh
+    - name: Build Modrinth Pack
+      run: ./build/build-modrinth.sh
+    - name: Upload The Pack
+      uses: actions/upload-artifact@v4.6.2
+      with: 
+        path: .build/*.zip
+        include-hidden-files: true

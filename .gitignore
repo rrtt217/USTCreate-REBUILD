@@ -904,7 +904,6 @@
 /saves/
 /xaero/
 /schematics/
-/shaderpacks/
 /XaeroWaypoints_BACKUP240807/
 /screenshots/
 /USTCreate Rebuild-natives/
@@ -919,5 +918,11 @@
 /.vscode/
 /.idea/
 /resourcepacks/
-/packwiz
 /.build
+/build/.cache
+/build/curseforge
+/build/modrinth
+/build/serverpack
+/.cache/import/entityculling-forge-1.8.1-mc1.20.1.jar
+/.cache/??
+/.cache/temp
