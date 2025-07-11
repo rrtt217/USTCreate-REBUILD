@@ -1,13 +1,13 @@
 name = "Tectonic"
-filename = "Tectonic v1.0.0 for 1.20.zip"
+filename = "tectonic-datapack-v2.2.1.zip"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "b5c541fdad6948a7b653f64634ff2ecbf6c96919"
+hash = "d70e27d5b437937396224c4092f777c37a423531"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 4622322
-project-id = 735401
+file-id = 5180269
+project-id = 986802
