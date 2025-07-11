@@ -641,7 +641,7 @@ metafile = true
 
 [[files]]
 file = "mods/world-preview.pw.toml"
-hash = "d24c10cf381c260892dc1c7c8283c40ffe70187bd8db2e7742ef9bcf7dec219c"
+hash = "f299d57b6ba636b4a226858197c7224babc1931a3058e3676c59c4e4444dd79f"
 metafile = true
 
 [[files]]
