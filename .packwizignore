@@ -4,3 +4,6 @@ build/
 #exclude git(hub) and vscode stuffs
 .github/
 .vscode/
+#other stuff
+.cache/
+tools/

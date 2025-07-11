@@ -227,7 +227,7 @@ metafile = true
 
 [[files]]
 file = "mods/caramel-chat.pw.toml"
-hash = "4ae50c88d3b995e89ef167b4080bc05b5bd6bdb52c3f802807da3495bf291d50"
+hash = "3b0a043f1c3663beab608ae9c9f773b110b93c7ebf74056258c269d4c1632e96"
 metafile = true
 
 [[files]]
@@ -247,7 +247,7 @@ metafile = true
 
 [[files]]
 file = "mods/contingameime.pw.toml"
-hash = "48317c2b0dde003f0370dc76b2387b5d13e4b38cafddeb5acb26630584423160"
+hash = "7bdaa651fbf902a6f082b2be7d8b725c4e0dd0f912050bc6517c255a3a3119eb"
 metafile = true
 
 [[files]]
@@ -267,7 +267,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-better-fps.pw.toml"
-hash = "2dce962341375002f5937a871778cd0fc06d6bda41a3bdba8940a611b25dcd32"
+hash = "f1fcfad8f0e4de7b39b72c5515c1753431599cf88318283233a7acfbf524b517"
 metafile = true
 
 [[files]]
@@ -372,7 +372,7 @@ metafile = true
 
 [[files]]
 file = "mods/flerovium.pw.toml"
-hash = "eeda9463b59d354bb30d0f67d5ffa80689232205969b4e0db742bdf1b42a52ca"
+hash = "c5ae38f2748621863d2e9ebaa26698bdbe343f278b93473dd0c100e84620c648"
 metafile = true
 
 [[files]]
@@ -402,12 +402,12 @@ metafile = true
 
 [[files]]
 file = "mods/imblocker.pw.toml"
-hash = "1cd5ba2b3278649b7e2a394485e2f2c8ec38c4feae262b6465a0a0fcca1ca24d"
+hash = "45cf0cb57e101c62cb44e8bd35df4b23d2ee8b68ec7af0b64be399d8b98fe2f7"
 metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "591082f1380a5542d2d1acb537d8d53ee26b5492a0b757d086729e926465eca8"
+hash = "3dbb0387a1d978c41869c6944ffdc8f22d322eda5c84eef4fd545754846af926"
 metafile = true
 
 [[files]]
@@ -602,7 +602,7 @@ metafile = true
 
 [[files]]
 file = "mods/tectonic.pw.toml"
-hash = "1688cf8e91002b58e23e3040a8b72a728ca76f054d110440d1e91b0d8ec4b16a"
+hash = "ba4f2077ff234f6a34f13bed6e0d195bc328dffe41180e892667aedb3c155f0a"
 metafile = true
 
 [[files]]
@@ -612,7 +612,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "b0978cb7ae7b79c5be89b323ca1bd038f693ff6d11c43dfcbd63953964149af2"
+hash = "479336ae99aa24b9ac5326dd484045bee00f148af20c05873872b8d07876a2c2"
 metafile = true
 
 [[files]]
@@ -668,7 +668,3 @@ metafile = true
 file = "shaderpacks/photon-shader.pw.toml"
 hash = "3add1378e964947556ec43ebc86a431981cfa67c9b95353105d7f48deb58ff3d"
 metafile = true
-
-[[files]]
-file = "tools/replace.sh"
-hash = "2c61794a71952e1d7eb2d454479af1c4942745eec2249b924c9466f3322d1bbd"
