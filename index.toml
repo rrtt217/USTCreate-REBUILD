@@ -5,14 +5,12 @@ file = "README.md"
 hash = "5748068628250310e4e79483326301575f02e05986e48d4a410bfde4285ba04c"
 
 [[files]]
-file = "bsl-shaders.pw.toml"
-hash = "c384d1c117331920a44021339b534c9129286b78ccdf54cda7a41a3ce75529e4"
-metafile = true
+file = "config/DistantHorizons.toml"
+hash = "83c61ea363d753bfba8b83dc181fadf16f7080a2213d6f27d9e110c70d9a7fb2"
 
 [[files]]
-file = "complementary-unbound.pw.toml"
-hash = "0ecc8df3b8cc35aaae4ea7757417a8050e99657e683e7b7e05410aeedfc28d0b"
-metafile = true
+file = "config/embeddium-options.json"
+hash = "b4b0aaec74cd2c37a2d0d384a4195768d8d7cbc9f86c7d993694e394fa35664d"
 
 [[files]]
 file = "config/inventoryhud-client.toml"
@@ -662,6 +660,24 @@ metafile = true
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
 hash = "fb4358298d2a0733d2786e1c532d96babb9dd3a376c465fb7a51f9452e902a4c"
+metafile = true
+
+[[files]]
+file = "options.txt"
+hash = "e7a57f648ee38d067bc3eb336d4b350abbc9f6cc871093c8988a6feca43cc384"
+
+[[files]]
+file = "servers.dat"
+hash = "89136dc4e0e970f2835beae40dc635c6141eccd4f700cedc7a6efdfebba59c63"
+
+[[files]]
+file = "shaderpacks/bsl-shaders.pw.toml"
+hash = "86a9a02c94f9656a0b202f48354e944f09f792a41a84a2a02b51eccb4f998c49"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-unbound.pw.toml"
+hash = "238ae9fac53a63921654ddea2bf814cb4c3751363a03f8b9e1f66f3653a6a4fb"
 metafile = true
 
 [[files]]
