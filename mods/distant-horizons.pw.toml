@@ -15,3 +15,4 @@ project-id = 508933
 [option]
 optional = true
 default = false
+description = "在 Minecraft 的默认视距之外添加简化过的地形，提升性能并实现更远的可视距离。注意：视距过大时性能占用仍然很大，请量力而行。"

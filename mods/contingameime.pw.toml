@@ -15,3 +15,4 @@ project-id = 835640
 [option]
 optional = true
 default = false
+description = "让游戏中可以显示输入法的候选词框，并避免了在打开/关闭输入框时反复切换输入法的烦恼。仅限Windows平台，非Windows平台不要选择。"

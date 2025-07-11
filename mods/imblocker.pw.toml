@@ -14,4 +14,5 @@ project-id = 483760
 
 [option]
 optional = true
-default = true
+default = false
+description = "跨平台的输入法修复工具，避免了在打开/关闭输入框时反复切换输入法的烦恼。与ContingameIME冲突。"

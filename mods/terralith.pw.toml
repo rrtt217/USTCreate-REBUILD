@@ -15,3 +15,4 @@ project-id = 513688
 [option]
 optional = true
 default = true
+description = "地形修改模组，服务端需装。如果需要超平坦，请不要使用该模组，改而使用数据包形式。"

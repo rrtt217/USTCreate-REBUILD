@@ -15,3 +15,4 @@ version = "xyB6Pr5e"
 [option]
 optional = true
 default = false
+description = "在Mac/Linux平台上常用的输入法修复工具，可与IMblocker配合使用。Windows用户推荐使用ContingameIME，除非遇到崩溃。"

@@ -1,0 +1,13 @@
+name = "Terratonic"
+filename = "terratonic-datapack-v3.1.2.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/3L2L6sWL/versions/vmMShagY/terratonic-datapack-v3.1.2.zip"
+hash-format = "sha512"
+hash = "5e0a40233856caecec7ea670607e5683d0822977352b188d78fe898f9fa3c7ec626e45adce429d98050782e5f2a09991de7712bf0cd71dc74d2d933a31875e00"
+
+[update]
+[update.modrinth]
+mod-id = "3L2L6sWL"
+version = "vmMShagY"

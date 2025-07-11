@@ -1,0 +1,13 @@
+name = "Terralith"
+filename = "Terralith_1.20_v2.5.4.zip"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/8oi3bsk5/versions/YFeeBgIL/Terralith_1.20_v2.5.4.zip"
+hash-format = "sha512"
+hash = "0b2caddfb266d2a8eaf2a0eac3c8ad2213ad6ad940a1b9e97669bf7c618c5be6284d99c99b7b562a8daa0f5d48642884c8ee67c5091ccf4625b4ef5b3e8790cd"
+
+[update]
+[update.modrinth]
+mod-id = "8oi3bsk5"
+version = "YFeeBgIL"

@@ -21,6 +21,21 @@ file = "config/tips.json"
 hash = "d2bb421105d8f163c9d970e7c792bf8c42f90c59c9da1f80c199617976ac0678"
 
 [[files]]
+file = "datapacks/tectonic.pw.toml"
+hash = "8ebea7ad60613ad930f5b7abde7898b0c541ede52d73a000730ace637a39c340"
+metafile = true
+
+[[files]]
+file = "datapacks/terralith.pw.toml"
+hash = "d91eb5ec8fd75afa33ad7d7f65e09e0561a02513c716aa967d30a3c0b96ada83"
+metafile = true
+
+[[files]]
+file = "datapacks/terratonic.pw.toml"
+hash = "ac9447dd7c6b50afc71828558c64207605c9e1bb5b40f1647cc6cb0b189fa688"
+metafile = true
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -225,7 +240,7 @@ metafile = true
 
 [[files]]
 file = "mods/caramel-chat.pw.toml"
-hash = "3b0a043f1c3663beab608ae9c9f773b110b93c7ebf74056258c269d4c1632e96"
+hash = "ec7ddf58a2b16e905763cea00809a78b8a1a20daaacf930ef60dce952e92b568"
 metafile = true
 
 [[files]]
@@ -245,7 +260,7 @@ metafile = true
 
 [[files]]
 file = "mods/contingameime.pw.toml"
-hash = "7bdaa651fbf902a6f082b2be7d8b725c4e0dd0f912050bc6517c255a3a3119eb"
+hash = "04149a769bf8505c600ddec6bed4107c9c66e1226c95123c5ca15ee6bcecf475"
 metafile = true
 
 [[files]]
@@ -335,7 +350,7 @@ metafile = true
 
 [[files]]
 file = "mods/distant-horizons.pw.toml"
-hash = "d8625ce411e5af73b9ec87ea98764c66e8db8037533a185d362f29549e60788a"
+hash = "e60ebaf1a264308ffb3de168ea4fe405fd502bf9e65aaa4b56b34269fa2b6d69"
 metafile = true
 
 [[files]]
@@ -400,7 +415,7 @@ metafile = true
 
 [[files]]
 file = "mods/imblocker.pw.toml"
-hash = "45cf0cb57e101c62cb44e8bd35df4b23d2ee8b68ec7af0b64be399d8b98fe2f7"
+hash = "a349f964732ad536b49d00ba4768d6ade875a849e8fc94abc410e7a1628fd2eb"
 metafile = true
 
 [[files]]
@@ -600,7 +615,7 @@ metafile = true
 
 [[files]]
 file = "mods/tectonic.pw.toml"
-hash = "ba4f2077ff234f6a34f13bed6e0d195bc328dffe41180e892667aedb3c155f0a"
+hash = "a32952fb716f50728c8dd841a8012b793d898c0fd78724164e87e589966e7434"
 metafile = true
 
 [[files]]
@@ -610,7 +625,7 @@ metafile = true
 
 [[files]]
 file = "mods/terralith.pw.toml"
-hash = "479336ae99aa24b9ac5326dd484045bee00f148af20c05873872b8d07876a2c2"
+hash = "e1b9da583c714e38602ed1617554fbd302c784ed0fc6d5154a5265dacdd0e022"
 metafile = true
 
 [[files]]
@@ -625,7 +640,7 @@ metafile = true
 
 [[files]]
 file = "mods/trashslot.pw.toml"
-hash = "3a575d6936f656b8df493259e6dd30d1a52bd7760abd0a549658079ca99e37ab"
+hash = "bc62fb7422d9668ec87dc007bf6ad266571226cd9649356b1dc00e0b4348fe8a"
 metafile = true
 
 [[files]]
