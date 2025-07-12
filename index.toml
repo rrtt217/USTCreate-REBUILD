@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "README.md"
-hash = "0a754e74daf3902f76673064f0e9facd45507f1a1b8da8f0cbab20fb1d696b20"
+hash = "f868fd863366d274cba59f0e01902a7c973f6367d5a4ef869d06db98b8b35b78"
 
 [[files]]
 file = "config/DistantHorizons.toml"
@@ -379,6 +379,11 @@ hash = "c2ca27c3e09a153a61b5aa568aca03b31cbc6ab14d6fe3bd6181269064923b95"
 metafile = true
 
 [[files]]
+file = "mods/explorers-compass.pw.toml"
+hash = "0ba2a01934d2de588071ac5a5281dd9a29fc46166fe6b9f99a809a70fe1a6668"
+metafile = true
+
+[[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "fa6e35c376181fa82ad33b9cb4c20382a0effd7eb09a06107dcc884b98f49ff2"
 metafile = true
@@ -585,7 +590,7 @@ metafile = true
 
 [[files]]
 file = "mods/renderscale.pw.toml"
-hash = "e722ddd554bd42c93ebe41484ad856e9c01404ca6b730c52a85ece22670988e0"
+hash = "3547ad495a9127796b058d82ff46d6c1be6fd0d6bcbd7ef8c6abd3fd5351598f"
 metafile = true
 
 [[files]]
@@ -654,8 +659,8 @@ hash = "bc62fb7422d9668ec87dc007bf6ad266571226cd9649356b1dc00e0b4348fe8a"
 metafile = true
 
 [[files]]
-file = "mods/ustcreate-1.0.0.jar"
-hash = "74df3ab366d323fdffcae013a0f83b49fcbac832e0655de077086e7410e5314a"
+file = "mods/ustcreate-1.0.1.jar"
+hash = "8d94b8fa507afb5b1a1627fadb6785720cb35ec03640a4fd1c66778d19df1bba"
 
 [[files]]
 file = "mods/waystones.pw.toml"
