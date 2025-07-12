@@ -31,5 +31,5 @@ jobs:
       uses: actions/upload-artifact@v4.6.2
       with: 
         name: 'modrinth-artifact'
-        path: .build/*.zip
+        path: .build/*.mrpack
         include-hidden-files: true
