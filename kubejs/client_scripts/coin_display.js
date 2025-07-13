@@ -1,6 +1,3 @@
-const COIN_VALUE_ORDER = ["copper", "iron", "gold", "netherite"];
-const COIN_VALUE_RATIO = 16;
-
 let PlayerCoinManager = Java.loadClass("com.ustcmc.ustcreate.core.PlayerCoinManager");
 
 PlayerEvents.tick(e => {
@@ -15,11 +12,11 @@ PlayerEvents.tick(e => {
             y: Client.window.guiScaledHeight - 30,
             shadow: true
         };
-        let coin_value = COIN_VALUE_ORDER
+        let coin_value = global.COIN_VALUE_ORDER
             .map((v, i) => `${
-                i === COIN_VALUE_ORDER.length - 1 
-                ? Math.floor(count / Math.pow(COIN_VALUE_RATIO, i))
-                : Math.floor(count / Math.pow(COIN_VALUE_RATIO, i)) % COIN_VALUE_RATIO
+                i === global.COIN_VALUE_ORDER.length - 1 
+                ? Math.floor(count / Math.pow(global.COIN_VALUE_RATIO, i))
+                : Math.floor(count / Math.pow(global.COIN_VALUE_RATIO, i)) % global.COIN_VALUE_RATIO
             }${v[0].toUpperCase()}`)
             .reverse();
         coin_detail = {
