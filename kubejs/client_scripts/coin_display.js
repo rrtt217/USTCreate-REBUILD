@@ -1,7 +1,7 @@
-const COIN_VALUE_ORDER = ["copper", "iron", "gold", "netherite"];
-const COIN_VALUE_RATIO = 16;
+// const COIN_VALUE_ORDER = ["copper", "iron", "gold", "netherite"];
+// const COIN_VALUE_RATIO = 16;
 
-let PlayerCoinManager = Java.loadClass("com.ustcmc.ustcreate.core.PlayerCoinManager");
+// let PlayerCoinManager = Java.loadClass("com.ustcmc.ustcreate.core.PlayerCoinManager");
 
 PlayerEvents.tick(e => {
     let coin_count = { type: "text", remove: true };
