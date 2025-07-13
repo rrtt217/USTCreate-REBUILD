@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
     // 白沙
     event.recipes.create.crushing([
         "biomesoplenty:white_sand", 
-        Item.of("minecraft:bone_meal", 1).withChance(0.75),
+        Item.of("minecraft:bone_meal", 1).withChance(0.1),
         Item.of("minecraft:amethyst_shard", 1).withChance(0.01)
     ], [
         "minecraft:calcite"
