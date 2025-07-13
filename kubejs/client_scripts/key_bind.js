@@ -1,9 +1,8 @@
+let ShoppingListItem = Java.loadClass("com.simibubi.create.content.logistics.tableCloth.ShoppingListItem");
+
 KeyBindEvents.firstKeyPress("deposit", () => {
     Client.runCommand("deposit all");
 })
-
-let ShoppingListItem = Java.loadClass("com.simibubi.create.content.logistics.tableCloth.ShoppingListItem");
-const COINS = ["copper", "iron", "gold", "netherite"];
 
 KeyBindEvents.firstKeyPress("withdraw", e => {
     let player = e.getPlayer();
@@ -17,7 +16,7 @@ KeyBindEvents.firstKeyPress("withdraw", e => {
     let list = ShoppingListItem.getList(item);
     let paymentEntries = list.bakeEntries(e.getLevel(), null).getSecond();
 
-    let neededCoins = COINS.reduce((acc, coin) => {
+    let neededCoins = global.COIN_VALUE_ORDER.reduce((acc, coin) => {
         acc[coin] = paymentEntries.getCountOf(Item.of(`createdeco:${coin}_coin`));
         return acc;
     }, {});
@@ -34,20 +33,20 @@ KeyBindEvents.firstKeyPress("withdraw", e => {
         let coinType = itemParts[0];
         let coinForm = itemParts[1];
 
-        if (!COINS.includes(coinType)) continue;
+        if (!global.COIN_VALUE_ORDER.includes(coinType)) continue;
         if (coinForm !== "coin") continue;
 
         neededCoins[coinType] -= inventoryItem.getCount();
     }
 
     let hasWithdrawn = false;
-    for (let coinType of COINS) {
+    global.COIN_VALUE_ORDER.forEach(coinType => {
         if (neededCoins[coinType] > 0) {
             let res = Client.runCommand(`withdraw ${coinType} ${neededCoins[coinType]}`);
             if (res === -1) return;
             hasWithdrawn = true;
         }
-    }
+    });
 
     if (hasWithdrawn) {
         Client.tell(Text.translate("commands.ustcreate.withdraw.success"));

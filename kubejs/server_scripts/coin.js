@@ -1,10 +1,7 @@
-const COIN_VALUE_ORDER = ["copper", "iron", "gold", "netherite"]
-const COIN_VALUE_RATIO = 16
-
 let PlayerCoinManager = Java.loadClass("com.ustcmc.ustcreate.core.PlayerCoinManager");
 
 ServerEvents.recipes(e => {
-    COIN_VALUE_ORDER.forEach(type => {
+    global.COIN_VALUE_ORDER.forEach(type => {
         e.remove({ id: `createdeco:pressing/coins/${type}_coin` })
     })
 })
@@ -16,12 +13,12 @@ ServerEvents.commandRegistry(e => {
             return 0;
         }
         let itemLs = item.id.split(":")[1].split("_");
-        let order = COIN_VALUE_ORDER.indexOf(itemLs[0]);
+        let order = global.COIN_VALUE_ORDER.indexOf(itemLs[0]);
         if (order === -1) {
             return 0;
         }
         let ratio = itemLs[1] === "coinstack" ? 4 : (itemLs[1] === "coin" ? 1 : 0);
-        let coins = item.getCount() * Math.pow(COIN_VALUE_RATIO, order) * ratio;
+        let coins = item.getCount() * Math.pow(global.COIN_VALUE_RATIO, order) * ratio;
         if (coins) {
             inventory.removeItem(item);
             PlayerCoinManager.addCoins(player, coins);
@@ -53,7 +50,7 @@ ServerEvents.commandRegistry(e => {
         )
     )
     let withdraw = cmd.literal("withdraw")
-    COIN_VALUE_ORDER.forEach((type, idx) => {
+    global.COIN_VALUE_ORDER.forEach((type, idx) => {
         withdraw.then(cmd.literal(type)
             .then(cmd.argument("amount", arg.INTEGER.create(e))
                 .executes(c => {
@@ -63,7 +60,7 @@ ServerEvents.commandRegistry(e => {
                         player.tell(Text.translate("commands.ustcreate.withdraw.error.invalid_number"));
                         return 1;
                     }
-                    let total_coins = amount * Math.pow(COIN_VALUE_RATIO, idx);
+                    let total_coins = amount * Math.pow(global.COIN_VALUE_RATIO, idx);
                     if (!PlayerCoinManager.tryDeductCoins(player, total_coins)) {
                         player.tell(Text.translate("commands.ustcreate.withdraw.error.not_enough_coins"));
                         return -1;
