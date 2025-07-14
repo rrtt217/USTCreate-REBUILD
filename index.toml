@@ -56,6 +56,10 @@ file = "kubejs/assets/openpartiesandclaims/lang/zh_cn.json"
 hash = "6bca429cb3caf48f934de986c198abd5644bb170cbb3d5983083af4a9e79a65c"
 
 [[files]]
+file = "kubejs/assets/terralith/lang/zh_cn.json"
+hash = "73abe1855e399e571e0bc30fed6ce6a927fa53a9f780af8886992846dbd03b82"
+
+[[files]]
 file = "kubejs/assets/ustcreate/lang/en_us.json"
 hash = "ad94ae9eb95b9cc7d722a3d73d7203cb74087a6513b33b35ee6007557b533f2c"
 
@@ -93,11 +97,11 @@ hash = "0db39e983a94ccc2790c9fcdce725c422175bc7427592c9cf85b03a4ead599bc"
 
 [[files]]
 file = "kubejs/client_scripts/coin_display.js"
-hash = "860cbc68d3604c38449a099b1d5081e4cc2ef4512467770afff7500d5deb2f77"
+hash = "338bd37103e862098db2f660d057954bbf66427507853e2d233f68c3338639af"
 
 [[files]]
 file = "kubejs/client_scripts/key_bind.js"
-hash = "786ae232bf5484b6604243bd6b2a77fbad3458713499bf0e8799e019bf32a8a4"
+hash = "790cb90c55890f607c5845535efb0a24c41a1760d0a6188f29c73255f24c6dfb"
 
 [[files]]
 file = "kubejs/jsconfig.json"
@@ -105,7 +109,19 @@ hash = "121ec9d7902090c050b096aa83792aeb7580946392785f5bae5f8e4bc6dbcce4"
 
 [[files]]
 file = "kubejs/server_scripts/coin.js"
-hash = "fced9f9c17992abf3ad4eb3a51a449251bf8a9e083b1876824fb5d5ddfb7b03f"
+hash = "8a171dddbc0b15611f943f8d6aa9ec3e09996f1bcb585704f25b88e52e7562aa"
+
+[[files]]
+file = "kubejs/server_scripts/flowers_grow.js"
+hash = "0aed6bb73c41df9054439f47d1ca17fb4f41371511239a961bfc5dab1a146e6d"
+
+[[files]]
+file = "kubejs/server_scripts/heads/miaoning.js"
+hash = "d943ac044d19902b66729e34f6125256e3aa72c0612d79ec9d18732c8d7c43fd"
+
+[[files]]
+file = "kubejs/server_scripts/heads/mysterious_conversion.js"
+hash = "540ae0ee7f856f9291d1fc7b57fae7599fa2cc6fd0c470d7168240fdecdc8b14"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/bioms'o'plenty/rainbow_birch.js"
@@ -126,6 +142,10 @@ hash = "cfd3e2064daa480cc29f7518329ea8579042e4fab646e19d65bc6f68b495275c"
 [[files]]
 file = "kubejs/server_scripts/recipes/create/electron_tube.js"
 hash = "d2da0f36cc289db7d688c4915c4808fab31e0662e9f5d84c85140bcfe8a0d42c"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/farmers_delight/pie_crust.js"
+hash = "2e7eb10418419582c726e630ff8d81332fcea27df75ea1f9ce5eb98f98e4b6a4"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/blaze_rod.js"
@@ -180,6 +200,10 @@ file = "kubejs/server_scripts/recipes/tconstruct/molten_andesite_alloy.js"
 hash = "1094e789010f06ff206aebe7cda0475539bf4758d09043298e6382e0dfc2b632"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/ustcreate/amethyst_dust.js"
+hash = "6aa5c9326c12dc22809fc3ee5db2c8435c2b5ab011d8bc7ed0940020ccafcbce"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/liquid_dragon_breath.js"
 hash = "0752cffba601e48966abf5ef65b6e908431d6dd37446d50ecd6283e6571207f8"
 
@@ -192,8 +216,20 @@ file = "kubejs/server_scripts/recipes/ustcreate/sulfur.js"
 hash = "2202f7e555302e3a1c63ea60b28489cd773233196661b717bc42ca6d5cd2c961"
 
 [[files]]
+file = "kubejs/server_scripts/tags/createdeco_sheets.js"
+hash = "c447ac1a51972b0deb68ab2a6e44a9af8df3d2d55be7d66becc1ef60fbb8ec24"
+
+[[files]]
+file = "kubejs/startup_scripts/fluid_mixin.js"
+hash = "286db5724cc8e88269ef15d0fea22d5922b70e9c572bfbd4d9b18c774b45fca7"
+
+[[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
 hash = "15c0ae455d1c31fef9f0be37a0241845ff99f9281b7c16ef12c385b6be2c95f2"
+
+[[files]]
+file = "kubejs/startup_scripts/global_var.js"
+hash = "2b8fd9c12b52ec50bf40d717465f613348cb7c9a304d3cca30aa24a1f177f979"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
@@ -201,7 +237,7 @@ hash = "7c6a17d98afe67f29798aacff726dd166e4869bb3d43a2f83d695fac866d222e"
 
 [[files]]
 file = "kubejs/startup_scripts/key_registry.js"
-hash = "47b781bf039a8264558d4dd27e23ebcefc6a9167cb068961eef8398dfcf3ad0f"
+hash = "e2ceb498d4f89424e6c49d8dd7dd4f89d58893a3bc3f350280fb9ef3ab536ed0"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
@@ -524,6 +560,11 @@ hash = "b80ccd0ef0fa9a6bfaf9e2c8873558095a00149ee19c060ca4cd09f4e1decb84"
 metafile = true
 
 [[files]]
+file = "mods/mmmmmmmmmmmm.pw.toml"
+hash = "539298bf1a9f71a14adb8b58eae8f31c56348770231e09b38cd422fa83c4b710"
+metafile = true
+
+[[files]]
 file = "mods/modern-ui.pw.toml"
 hash = "deddd6639cd0ef6c262fa2d789abf1b96e08195a6f7667ab914b2325b5a43851"
 metafile = true
@@ -625,7 +666,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "e63437ce2e261423834a95161b1e4fd225f2636507d56669182339a10a97eb1c"
+hash = "b6e96f4d009b04c0bc19a0093645db8087347927c41ae526dd3508f8ff44da10"
 metafile = true
 
 [[files]]
@@ -651,11 +692,6 @@ metafile = true
 [[files]]
 file = "mods/tips.pw.toml"
 hash = "b1461eb88a7a08c52df58dfedb91c6343eaf7ce1d1613ce0bc675924c49a6c14"
-metafile = true
-
-[[files]]
-file = "mods/trashslot.pw.toml"
-hash = "bc62fb7422d9668ec87dc007bf6ad266571226cd9649356b1dc00e0b4348fe8a"
 metafile = true
 
 [[files]]
