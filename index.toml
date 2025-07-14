@@ -523,6 +523,11 @@ hash = "b80ccd0ef0fa9a6bfaf9e2c8873558095a00149ee19c060ca4cd09f4e1decb84"
 metafile = true
 
 [[files]]
+file = "mods/mmmmmmmmmmmm.pw.toml"
+hash = "70bd76457fcd02b797eeaad3e88c3390b88d0e8bd15d7100631c41401953926e"
+metafile = true
+
+[[files]]
 file = "mods/modern-ui.pw.toml"
 hash = "9d88f59f7c3e8aa79561c758e9eeb92f05cca0d652979ab593768f87607351ad"
 metafile = true
