@@ -658,11 +658,6 @@ hash = "6f1d490b7da3e30a96bf49588f3e4a6989be3368478622959a3f1f4fbe54198b"
 metafile = true
 
 [[files]]
-file = "mods/trashslot.pw.toml"
-hash = "a4dd60921f10e4edfa867d912a6e464496aa96525fbbb4f2da629e01db28530a"
-metafile = true
-
-[[files]]
 file = "mods/ustcreate-1.0.1.jar"
 hash = "8d94b8fa507afb5b1a1627fadb6785720cb35ec03640a4fd1c66778d19df1bba"
 
