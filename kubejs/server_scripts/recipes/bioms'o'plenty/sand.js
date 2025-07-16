@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
             {
                 "item": "minecraft:bone_meal",
                 "count": 1,
-                "chance": 0.75
+                "chance": 0.5
             },
             {
                 "item": "biomesoplenty:sea_oats",
@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
             {
                 "item": "create:zinc_nugget",
                 "count": 1,
-                "chance": 0.25
+                "chance": 0.09
             },
             {
                 "item": "minecraft:ink_sac",
