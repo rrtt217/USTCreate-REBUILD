@@ -20,12 +20,12 @@ BlockEvents.rightClicked(event => {
         let index = Math.floor(Math.random() * positions.length);
         let [tx, ty, tz] = positions[index];
         const flowerBlockState = Block.getBlock(flowerID).defaultBlockState();
+
         if (level.setBlockAndUpdate(new BlockPos(tx, ty, tz), flowerBlockState)) {
             // 粒子效果
             server.runCommandSilent(
                 `particle minecraft:happy_villager ${tx + 0.5} ${ty + 0.5} ${tz + 0.5} 0.5 0.5 0.5 0.1 15`
             );
-
             successCount++;
         }
     }

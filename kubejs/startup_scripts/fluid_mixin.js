@@ -8,13 +8,12 @@ FluidEvents.interact(event => {
         },
         (level, currentPos, relativePos, currentState) => {
 
-            let sourceBlockState = Block.getBlock('minecraft:amethyst_block').defaultBlockState()
-            let flowingBlockState = Block.getBlock('minecraft:calcite').defaultBlockState()
+            let sourceBlockState = Block.getBlock('minecraft:amethyst_block').defaultBlockState()   //源头
+            let flowingBlockState = Block.getBlock('minecraft:calcite').defaultBlockState()     //流动
             let newState = currentState.source ? sourceBlockState : flowingBlockState
 
             level.setBlockAndUpdate(currentPos, newState)
             level.levelEvent(1501, currentPos, 0)
         }
     )
-
 })

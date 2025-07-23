@@ -3,6 +3,7 @@
 !.gitignore
 
 !kubejs/assets/**
+!kubejs/data/**
 !kubejs/client_scripts/**
 !kubejs/server_scripts/**
 !kubejs/startup_scripts/**
