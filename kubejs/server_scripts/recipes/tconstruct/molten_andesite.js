@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         "time": 40
     })
 
-    // Casting recipe for Andesite Ingot
+    // Casting recipe for Andesite
     event.custom({
         "type": "tconstruct:casting_basin",
         "cooling_time": 40,
