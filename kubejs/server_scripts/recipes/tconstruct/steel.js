@@ -4,16 +4,16 @@ ServerEvents.recipes(event => {
         "type": "tconstruct:alloy",
         "inputs": [
             {
-                "amount": 1000,
+                "amount": 90,
                 "tag": "forge:molten_iron"
             },
             {
-                "amount": 200,
+                "amount": 15,
                 "tag": "ustcreate:liqui_coal"
             }
         ],
         "result": {
-            "amount": 1000,
+            "amount": 90,
             "fluid": "tconstruct:molten_steel"
         },
         "temperature": 950

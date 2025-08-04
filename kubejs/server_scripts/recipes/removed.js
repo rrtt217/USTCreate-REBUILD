@@ -21,4 +21,5 @@ ServerEvents.recipes(event => {
     event.remove({ id: "waystones:warp_plate" })
     event.remove({ id: 'sophisticatedbackpacks:stack_upgrade_tier_3'})
     event.remove({ id: 'sophisticatedbackpacks:stack_upgrade_tier_4'})
+    event.remove({ id: 'sophisticatedbackpacks:stack_upgrade_omega_tier'})
 })

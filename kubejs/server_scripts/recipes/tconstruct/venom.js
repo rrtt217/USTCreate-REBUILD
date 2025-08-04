@@ -6,13 +6,13 @@ ServerEvents.recipes(event => {
         Fluid.of("minecraft:water", 1000),
         Fluid.of({
             fluid: "create:potion",
-            amount: 1000,
+            amount: 500,
             nbt: {
                 Bottle: "REGULAR",
                 Potion: "minecraft:poison"
             }
         }),
         Item.of("biomesoplenty:wilted_lily", 3)
-    ]).id("ustcreate:mixing/venom");
-
+    ])
+    .id("ustcreate:mixing/venom");
 })

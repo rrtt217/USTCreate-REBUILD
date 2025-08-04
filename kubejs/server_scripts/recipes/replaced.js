@@ -26,5 +26,4 @@ ServerEvents.recipes(event => {
         "minecraft:furnace",
         "tconstruct:seared_melter"
     )
-
 })
