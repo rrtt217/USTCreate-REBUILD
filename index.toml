@@ -48,6 +48,10 @@ file = "kubejs/assets/createdeco/lang/zh_cn.json"
 hash = "e5acda3ca330c964511748302a585843d6f926b2d31793c2c85ed62b3c93188c"
 
 [[files]]
+file = "kubejs/assets/explorerscompass/lang/zh_cn.json"
+hash = "f96a102fedf58322f99fe9e813ba5edca6aaca486a9e6b6cda026fb832f3306c"
+
+[[files]]
 file = "kubejs/assets/nethersdelight/lang/zh_cn.json"
 hash = "52019353b759879ba3232656e9ee757d25ed2e1897b11af6c61d79d60f991db3"
 
@@ -65,7 +69,7 @@ hash = "ad94ae9eb95b9cc7d722a3d73d7203cb74087a6513b33b35ee6007557b533f2c"
 
 [[files]]
 file = "kubejs/assets/ustcreate/lang/zh_cn.json"
-hash = "2e09c738fad75bd1d57315c3bde7fa4905c91de70c924c9315900e215ae2640b"
+hash = "b93029bb26e0319acfaed81b25f3631babd13e1b525f48cd36ccd62f559c8158"
 
 [[files]]
 file = "kubejs/assets/ustcreate/textures/item/amethyst_dust.png"
@@ -88,6 +92,10 @@ file = "kubejs/assets/ustcreate/textures/item/burnt_iron.png.mcmeta"
 hash = "5d782b61326fb2efccb2027d8ea9eade46d8930712b06e8adabcdc8366a85cfa"
 
 [[files]]
+file = "kubejs/assets/ustcreate/textures/item/fiery_billet.png"
+hash = "131e784336582bbb540058d964bf6ae805616fca1bd7ea5d1ec8f29d8f18d0cb"
+
+[[files]]
 file = "kubejs/assets/ustcreate/textures/item/sulfur.png"
 hash = "f1fd4d1fd166576f6168a54d4c8b91c2a60a7a7b93c9787c6017e4c417317524"
 
@@ -108,20 +116,24 @@ file = "kubejs/jsconfig.json"
 hash = "121ec9d7902090c050b096aa83792aeb7580946392785f5bae5f8e4bc6dbcce4"
 
 [[files]]
-file = "kubejs/server_scripts/coin.js"
+file = "kubejs/server_scripts/features/coin.js"
 hash = "8a171dddbc0b15611f943f8d6aa9ec3e09996f1bcb585704f25b88e52e7562aa"
 
 [[files]]
-file = "kubejs/server_scripts/flowers_grow.js"
-hash = "0aed6bb73c41df9054439f47d1ca17fb4f41371511239a961bfc5dab1a146e6d"
+file = "kubejs/server_scripts/features/flowers_grow.js"
+hash = "3fb64565947f4e891c4aa11fd44aa6f531f715da8ebe8156961dd4da52a0ec77"
+
+[[files]]
+file = "kubejs/server_scripts/features/sculk_shrieker_adjustment.js"
+hash = "4e0e4fafb556c29f2c22835f78e8f7ecca6e85955aac34ef58a1a30faec7a015"
 
 [[files]]
 file = "kubejs/server_scripts/heads/miaoning.js"
-hash = "d943ac044d19902b66729e34f6125256e3aa72c0612d79ec9d18732c8d7c43fd"
+hash = "99924416d3405db876d25b6809a2a521f921ce8700628218e97882b83dc5ea6f"
 
 [[files]]
 file = "kubejs/server_scripts/heads/mysterious_conversion.js"
-hash = "540ae0ee7f856f9291d1fc7b57fae7599fa2cc6fd0c470d7168240fdecdc8b14"
+hash = "b492d068e60ee22e6c4b640f95dd8c35a0fc74b2253e7ca37e03331958745094"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/bioms'o'plenty/rainbow_birch.js"
@@ -133,7 +145,7 @@ hash = "a7069af383bfdab98e18a9bfa74d1dfd2c6d3906dee76b54c440aebfd614ad7e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/bioms'o'plenty/sand.js"
-hash = "3da410549718c10b1e3652b9fdb4ab3b661f71ee89287315a860e2cb01a6f5af"
+hash = "260efd9ec5c01b9417d217596a9910573c305e9a677224420a769b517caa4f96"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/blaze_burner.js"
@@ -165,11 +177,11 @@ hash = "7a07fe29f6d448a9a2a9689f422f527963a7147af03c09e4e1244bbcad1112dc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/mycelium.js"
-hash = "f13985ad8c83f2d7216450deb883af5a8c3400ff2c03150f24e5826442edbede"
+hash = "461cbc67f2a57bd5c01b58e3a44c88602ec1f4d5019ac688dbe0eaf01db24ca5"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/spider_eye.js"
-hash = "4edd5c6b45fc516368cce67eec756a62d7731c1eb5f849cf69b0a7f8617f72c9"
+hash = "7a05a40904d013c85f82fff25f0e996e0e5560d1b8cd21b86d11b29103013b92"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/spore_blossom.js"
@@ -181,11 +193,11 @@ hash = "583b0c3e573b40a96d78553af4399898a1d89525bf3c36459de5472c3f460873"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removed.js"
-hash = "ee0b1d28bfe1dd66520853280d7f6b2c0e0b0b251334a247c8066b20d01b7bb0"
+hash = "898d3522104f4a0dc01f5f9d17e48b65aa7e2d7cfbff262854bef7c458864f56"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replaced.js"
-hash = "4185433a87eb1d3c78948cd5661f18f9bbcccca6134dffe511c07c3e998a8229"
+hash = "b08435bf5b6b97a2ec87aa7ef2a14f3355b1416d73542f5e8b82cf8d99d1e9b3"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/burnt_metal.js"
@@ -193,15 +205,27 @@ hash = "0bd1fe0079260f7cd59000493e2c1528f05f7c39fce617f530ae07ed6828630e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/molten_andesite.js"
-hash = "e4cafd110a8fa92b98eace17ddbeb531cf4cc8796ee08660842e0c40164f529a"
+hash = "02dc0c7f16acde1ab1e2146a5397fcfb4e6a7d8a04802c0a3798a2d3f837e984"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/molten_andesite_alloy.js"
-hash = "1094e789010f06ff206aebe7cda0475539bf4758d09043298e6382e0dfc2b632"
+hash = "c724b8b1fc0e561bd3c8708c3accb8dda4dea2da543251fd9797ec3c6534fa07"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tconstruct/steel.js"
+hash = "a34fb039bde63c3e0683428039adecb35cbf9c4cad8e1453c1397616eda32654"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/tconstruct/venom.js"
+hash = "576fe3c78c1999a12ea601c98e04b67ac609d511912e95f2e8976605ea14d63b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/amethyst_dust.js"
 hash = "6aa5c9326c12dc22809fc3ee5db2c8435c2b5ab011d8bc7ed0940020ccafcbce"
+
+[[files]]
+file = "kubejs/server_scripts/recipes/ustcreate/coins_recipe.js"
+hash = "b9cefe0d095e4d79b8098e3231b9916ee45017efd96933f084dfa69ff36fb91c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/liquid_dragon_breath.js"
@@ -209,7 +233,7 @@ hash = "0752cffba601e48966abf5ef65b6e908431d6dd37446d50ecd6283e6571207f8"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/liquid_rose_quartz.js"
-hash = "04e3f54bbaf9550bd18da9818de6ee6a56a9f74bf73bfb02002d53f91008414d"
+hash = "2e7ce69999dcd45297df999237d6546733e518144d61c8d1ddc5abd08a4e02bb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/sulfur.js"
@@ -221,11 +245,11 @@ hash = "c447ac1a51972b0deb68ab2a6e44a9af8df3d2d55be7d66becc1ef60fbb8ec24"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_mixin.js"
-hash = "286db5724cc8e88269ef15d0fea22d5922b70e9c572bfbd4d9b18c774b45fca7"
+hash = "cbbff4dbf19d33f41dc114b711a1d09a57148f7950cb6cb8d9813ef84a4d9f2c"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
-hash = "15c0ae455d1c31fef9f0be37a0241845ff99f9281b7c16ef12c385b6be2c95f2"
+hash = "b1c8faa6a4cd3c24743bee5fa128230bb81b6d6ca0aca5126c74636e9fddab7b"
 
 [[files]]
 file = "kubejs/startup_scripts/global_var.js"
@@ -233,7 +257,7 @@ hash = "2b8fd9c12b52ec50bf40d717465f613348cb7c9a304d3cca30aa24a1f177f979"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "7c6a17d98afe67f29798aacff726dd166e4869bb3d43a2f83d695fac866d222e"
+hash = "5e00b87c80b626e46276e77d5a879117023e1cf84fdd14180eac5d408b7a7df2"
 
 [[files]]
 file = "kubejs/startup_scripts/key_registry.js"
@@ -277,6 +301,11 @@ metafile = true
 [[files]]
 file = "mods/caramel-chat.pw.toml"
 hash = "ec7ddf58a2b16e905763cea00809a78b8a1a20daaacf930ef60dce952e92b568"
+metafile = true
+
+[[files]]
+file = "mods/casualness-delight.pw.toml"
+hash = "ca652d606992cb9276a8720c74d89b511886ffb64a7bb92aab3c28da3da82381"
 metafile = true
 
 [[files]]
@@ -368,6 +397,10 @@ metafile = true
 file = "mods/create.pw.toml"
 hash = "26b5eb49763ba8b3078ea93222f2b73e86ad4b3b2030a1b7628aab37b9061ae2"
 metafile = true
+
+[[files]]
+file = "mods/create_freight-1.20.1-0.1.0.jar"
+hash = "e4a8c740a2b0c5b6282b8549a9d5d297ba6e440cc33d46ee97a8cc9eff4f731d"
 
 [[files]]
 file = "mods/cuisine-delight.pw.toml"
@@ -661,7 +694,7 @@ metafile = true
 
 [[files]]
 file = "mods/storage-drawers.pw.toml"
-hash = "b5280a819e67fcc922f041ec277823ff8574565472c8afd9a36afbe716f9542c"
+hash = "09b78b4b428e41154a9e38cf34fb9ccd7490dc983da836e436632c43d370a5fb"
 metafile = true
 
 [[files]]
@@ -695,8 +728,8 @@ hash = "b1461eb88a7a08c52df58dfedb91c6343eaf7ce1d1613ce0bc675924c49a6c14"
 metafile = true
 
 [[files]]
-file = "mods/ustcreate-1.0.1.jar"
-hash = "8d94b8fa507afb5b1a1627fadb6785720cb35ec03640a4fd1c66778d19df1bba"
+file = "mods/ustcreate-1.0.3.jar"
+hash = "6abb8c71b0f21f5d3f0ae93d2bd02168851475108a0bb1c5871ef14d6faeafcf"
 
 [[files]]
 file = "mods/waystones.pw.toml"
