@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
         "type": "tconstruct:alloy",
         "inputs": [
             {
-                "amount": 1000,
+                "amount": 180,
                 "fluid": "ustcreate:molten_andesite"
             },
             {
