@@ -6,19 +6,19 @@ ServerEvents.recipes(event => {
             "item": "minecraft:andesite"
         },
         "result": {
-            "amount": 1000,
+            "amount": 180,
             "fluid": "ustcreate:molten_andesite"
         },
         "temperature": 600,
         "time": 40
     })
 
-    // Casting recipe for Andesite Ingot
+    // Casting recipe for Andesite
     event.custom({
         "type": "tconstruct:casting_basin",
         "cooling_time": 40,
         "fluid": {
-            "amount": 1000,
+            "amount": 180,
             "fluid": "ustcreate:molten_andesite"
         },
         "result": "minecraft:andesite"
