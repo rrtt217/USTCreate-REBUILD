@@ -280,6 +280,11 @@ hash = "4ae50c88d3b995e89ef167b4080bc05b5bd6bdb52c3f802807da3495bf291d50"
 metafile = true
 
 [[files]]
+file = "mods/casualness-delight.pw.toml"
+hash = "c65ca06c65843f77da5261dbf82e442cb78739799afb5041b8d5c1bbc228b200"
+metafile = true
+
+[[files]]
 file = "mods/chat-heads.pw.toml"
 hash = "de0ab85ea06d797c2b3b5c70c8f1fdfc1f76fb2530f792a89f4f6d9807fc649a"
 metafile = true
@@ -660,7 +665,7 @@ metafile = true
 
 [[files]]
 file = "mods/storagedrawers.pw.toml"
-hash = "8781fb6bf8a0b948bf2f802c3df1425f84f5df9c5cda4d5c5891f4be715b2bcc"
+hash = "014b2bb1cb7fc898046de77533f59e500aef426fe856d3a8db07288c98b621b0"
 metafile = true
 
 [[files]]

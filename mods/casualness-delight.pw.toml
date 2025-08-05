@@ -1,0 +1,13 @@
+name = "Casualness Delight"
+filename = "[+食品}_随意乐事casualness_delight-1.20.1-0.4n.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/zYuGPZIx/versions/p6Z5Qd84/%5B%2B%E9%A3%9F%E5%93%81%7D_%E9%9A%8F%E6%84%8F%E4%B9%90%E4%BA%8Bcasualness_delight-1.20.1-0.4n.jar"
+hash-format = "sha512"
+hash = "e1324ec629764fffc39d5a7733b5e95f13c58f0e53cef40fd11d6751754798d5885514a3c4719621cdf0af16b363466f133d513fc00bba7b1a9c8d6abb7d396b"
+
+[update]
+[update.modrinth]
+mod-id = "zYuGPZIx"
+version = "p6Z5Qd84"

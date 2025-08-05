@@ -4,4 +4,5 @@ StartupEvents.registry('item', event => {
     event.create("ustcreate:burnt_gold", "basic").tooltip("熔炉的温度太低了，金矿石没有完全熔化");  //未完全熔化的金
     event.create("ustcreate:sulfur", "basic");  //硫磺
     event.create("ustcreate:amethyst_dust", "basic");  //紫水晶粉
+    event.create("ustcreate:fiery_billet", "basic");  //炽热的钢坯
 })
