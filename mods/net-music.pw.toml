@@ -1,13 +1,13 @@
 name = "Net Music"
-filename = "netmusic-forge-1.20.1-1.1.7-hotfix.jar"
+filename = "netmusic-1.1.8-forge+mc1.20.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "a5fa07b9cfdfea293241d89a089f89f66547a66b"
+hash = "7c0e1bea36825b43b21afb3781b1da9d8b06232c"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 6659790
+file-id = 6838602
 project-id = 978569
