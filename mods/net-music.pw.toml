@@ -1,13 +1,13 @@
 name = "Net Music"
-filename = "netmusic-forge-1.20.1-1.1.7-hotfix.jar"
+filename = "netmusic-1.1.8-forge+mc1.20.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/gKNuqaQq/versions/UFJAx2ko/netmusic-forge-1.20.1-1.1.7-hotfix.jar"
+url = "https://cdn.modrinth.com/data/gKNuqaQq/versions/ZjuB3pc7/netmusic-1.1.8-forge%2Bmc1.20.1.jar"
 hash-format = "sha512"
-hash = "91a0fd1dcf06e09181d6936533e8089d6a7f8de30bfc638340271b7ac30146c928db9233ee518af6d1f13250819a6fa71e270177ec510727b0a8af283ae53c52"
+hash = "55be13bacc7c507b9166fc6f85d512186c334416a87e9881a1c7cd89dd23e0c2586e92b93989b6b38b57526e024b8c1ec03c5a101482fbb07859b83cd15816a4"
 
 [update]
 [update.modrinth]
 mod-id = "gKNuqaQq"
-version = "UFJAx2ko"
+version = "ZjuB3pc7"

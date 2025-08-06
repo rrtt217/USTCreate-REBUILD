@@ -1,18 +1,17 @@
 name = "IMBlocker"
-filename = "IMBlocker-5.4.0-forge+1.17-1.20.4.jar"
+filename = "IMBlocker-5.0.2-1.19.4-1.20.4.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/WMDesFsZ/versions/2AzTAzY2/IMBlocker-5.4.0-forge%2B1.17-1.20.4.jar"
+url = "https://cdn.modrinth.com/data/WMDesFsZ/versions/tTgdJ7Yw/IMBlocker-5.0.2-1.19.4-1.20.4.jar"
 hash-format = "sha512"
-hash = "7714d885caa729036e8e59ab6258c75726898b6be1833d796248a205653aba13fa46374148f0f43399c447471340891957883129deb95216f4ea978b6ff085d8"
+hash = "7ff68f3648cf3d51fb15a6558b8ac97d1068c29e2e7d14cbd09d4f0af6399a97aa748f34f25be5eb2057f36f9a02df68d928544dc39bc1ef66040a65703d7003"
 
 [update]
 [update.modrinth]
 mod-id = "WMDesFsZ"
-version = "2AzTAzY2"
+version = "tTgdJ7Yw"
 
 [option]
 optional = true
-default = false
 description = "跨平台的输入法修复工具，避免了在打开/关闭输入框时反复切换输入法的烦恼。与ContingameIME冲突。"
