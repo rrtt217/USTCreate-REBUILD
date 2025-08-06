@@ -23,6 +23,18 @@ jobs:
         include-hidden-files: true
     - uses: actions/checkout@v4.2.2
       with: 
+        ref: 'main'
+    - name: Build Minimum Curseforge Client Pack
+      shell: bash
+      run: ./tools/remove_optional_mods.sh curseforge
+    - name: Upload Minimum Curseforge Client Pack
+      uses: actions/upload-artifact@v4.6.2
+      with: 
+        name: 'minimum-curseforge-client-artifact'
+        path: .build/*.zip
+        include-hidden-files: true
+    - uses: actions/checkout@v4.2.2
+      with: 
         ref: 'modrinth'
     - name: Build Modrinth Pack
       shell: bash
@@ -31,5 +43,14 @@ jobs:
       uses: actions/upload-artifact@v4.6.2
       with: 
         name: 'modrinth-artifact'
+        path: .build/*.mrpack
+        include-hidden-files: true
+    - name: Build Minimum Modrinth Pack
+      shell: bash
+      run: ./tools/remove_optional_mods.sh modrinth
+    - name: Upload Minimum Modrinth Pack
+      uses: actions/upload-artifact@v4.6.2
+      with:
+        name: 'minimum-modrinth-artifact'
         path: .build/*.mrpack
         include-hidden-files: true
