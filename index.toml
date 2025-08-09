@@ -386,7 +386,7 @@ metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
-hash = "41cd8084112707ecd8bb8569e14acae0f45c81301c99dbf4d1db0714ea1e7597"
+hash = "a4951ecaffb991efc394980cb2dfc5efcb9cda8f675fb8d3e0bcd082cf8dfd2a"
 metafile = true
 
 [[files]]
@@ -615,7 +615,7 @@ metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "b334cd0bb650a9ae6fab99805f7ccab808f1c8ef71534f03fd57416514ef32ac"
+hash = "f05de3133495dfd4ce7f3fdd266bf1ef8ce83ce587a7ccb0612a832a17d8541d"
 metafile = true
 
 [[files]]
@@ -719,7 +719,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeroplus.pw.toml"
-hash = "f8e207127f222209a62d9b55b27090fd5ad2c7868615b821e63e3888f675a7f6"
+hash = "c06bd983315d314fc74b198ec25f831c39fe14fe3ed3ee73c3ce9039a73d5ea9"
 metafile = true
 
 [[files]]

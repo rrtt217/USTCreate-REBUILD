@@ -1,13 +1,13 @@
 name = "CustomSkinLoader"
-filename = "CustomSkinLoader_ForgeV2-14.24.jar"
+filename = "CustomSkinLoader_ForgeV2-14.25.jar"
 side = "client"
 
 [download]
-url = "https://cdn.modrinth.com/data/idMHQ4n2/versions/Pc1V24Kr/CustomSkinLoader_ForgeV2-14.24.jar"
+url = "https://cdn.modrinth.com/data/idMHQ4n2/versions/CdHgYmem/CustomSkinLoader_ForgeV2-14.25.jar"
 hash-format = "sha512"
-hash = "a412314b214615ec6f4dd8e2a6338fe3ecb8df526fbb8375ceca59bcea5b4e02927ff38c7b77752d8f77eef9ee9f673dcd456b19cd15af03f749751a2f61fd1c"
+hash = "5161089de82fba1dac0d4cfcc12eeedb2b98d7481e87f7c67abcf9c7b877e852df4d5668fb9b2f62fa3e817226a4c16226dc32d97389167aec1ecf8ff50c5eb0"
 
 [update]
 [update.modrinth]
 mod-id = "idMHQ4n2"
-version = "Pc1V24Kr"
+version = "CdHgYmem"
