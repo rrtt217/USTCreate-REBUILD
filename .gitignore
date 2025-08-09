@@ -10,6 +10,7 @@
 /build/curseforge
 /build/modrinth
 /build/serverpack
+/build/versioncheck
 /.cache/import/entityculling-forge-1.8.1-mc1.20.1.jar
 /.cache/??
 /.cache/temp
