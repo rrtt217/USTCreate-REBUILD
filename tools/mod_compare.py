@@ -12,7 +12,7 @@ def clean_packwiz_text(text : str):
         if start != -1 and end != -1:
             mod_list[i] = mod_list[i][start+1:end]
         mod_list[i] = mod_list[i].strip()
-        #print("debug2:",mod_list[i],'\n')
+        print("debug2:",mod_list[i],'\n')
     return mod_list
 def clean_normal_modname(mod_text : str):
     """Clean mod text by removing launcher-specific formatting."""
@@ -23,33 +23,63 @@ def clean_normal_modname(mod_text : str):
         if start == 0 and end != -1:
             mod_list[i] = mod_list[i][end+1:]
         mod_list[i] = mod_list[i].strip()
-        #print("debug1:",mod_list[i],'\n')
+        print("debug1:",mod_list[i],'\n')
     return mod_list
-def compare_mods(mod_list1 : list, mod_list2 : list):
+def compare_mods(
+    mod_list1: list[str],
+    mod_list2: list[str]
+) -> tuple[list[str], list[tuple[str, str]], list[str], list[str]]:
     """Compare two lists of mods and return a list of differences."""
-    #this only stores one.
-    common_and_same_version_mods = []
-    #this stores a tuple of two.
-    common_but_different_version_mods = []
-    #these only store one.
-    mods_only_in_list1 = []
-    mods_only_in_list2 = []
+    # 创建副本避免修改原始列表
+    remaining_mods1 = mod_list1.copy()
+    remaining_mods2 = mod_list2.copy()
+    
+    common_and_same_version_mods: list[str] = []
+    common_but_different_version_mods: list[tuple[str, str]] = []
+    # 创建副本避免修改原始列表
+    remaining_mods1 = mod_list1.copy()
+    remaining_mods2 = mod_list2.copy()
+    
+    common_and_same_version_mods: list[str] = []
+    common_but_different_version_mods: list[tuple[str, str]] = []
+    
+    # 第一阶段：查找完全匹配
     for mod in mod_list1:
-        if mod in mod_list2:
+        if mod in remaining_mods2:
             common_and_same_version_mods.append(mod)
-            mod_list1.remove(mod)
-            mod_list2.remove(mod)
-        else:
-            ratios = []
-            for mod2 in mod_list2:
-                ratios.append(SequenceMatcher(None, mod, mod2).ratio())
-            if max(ratios) > 0.5:
-                common_but_different_version_mods.append((mod, mod_list2[ratios.index(max(ratios))]))
-                mod_list1.remove(mod)
-                mod_list2.remove(mod_list2[ratios.index(max(ratios))])
-    mods_only_in_list1 = mod_list1
-    mods_only_in_list2 = mod_list2
-    return common_and_same_version_mods, common_but_different_version_mods, mods_only_in_list1, mods_only_in_list2
+            remaining_mods1.remove(mod)
+            remaining_mods2.remove(mod)
+    
+    # 第二阶段：查找相似匹配
+    # 创建临时列表避免修改遍历中的列表
+    temp_mods1 = remaining_mods1.copy()
+    
+    for mod in temp_mods1:
+        best_ratio = 0.0
+        best_match = None
+        
+        # 查找最佳匹配
+        for candidate in remaining_mods2:
+            ratio = SequenceMatcher(None, mod, candidate).ratio()
+            print(f"Comparing {mod} with {candidate}: {ratio}")
+            if ratio > best_ratio:
+                best_ratio = ratio
+                best_match = candidate
+        
+        # 检查是否达到相似度阈值
+        if best_ratio > 0.5 and best_match:
+            common_but_different_version_mods.append((mod, best_match))
+            if mod in remaining_mods1:
+                remaining_mods1.remove(mod)
+            if best_match in remaining_mods2:
+                remaining_mods2.remove(best_match)
+    
+    return (
+        common_and_same_version_mods,
+        common_but_different_version_mods,
+        remaining_mods1,
+        remaining_mods2
+    )
 def main():
     """Main function to compare mod lists."""
     if len(sys.argv) != 3:
