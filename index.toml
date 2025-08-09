@@ -639,7 +639,7 @@ metafile = true
 
 [[files]]
 file = "mods/open-parties-and-claims.pw.toml"
-hash = "8bbe4baebc1eae2bc5676d521055abb17933256c922e6c750a6d042d7c2c392c"
+hash = "74735952df4c37dbc3e36df80035a0a4ec4a4d56a5a622e7fa94626732fd789b"
 metafile = true
 
 [[files]]
@@ -689,7 +689,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "d6a4767bca94328181b0019ec9f7be3f2c223bcb8c778e7994db6cbcf8542e7a"
+hash = "bca498a73d554610d0429f255e8b02c661b8d46dacb956be3bc7cf849299b455"
 metafile = true
 
 [[files]]
