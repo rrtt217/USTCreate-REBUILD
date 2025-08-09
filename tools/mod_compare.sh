@@ -27,7 +27,7 @@ git checkout "$original_branch"
 
 # 步骤6：执行比较脚本
 echo "执行版本比较..."
-python3 tools/mod_compare.py \
+tools/mod_compare.py \
   build/versioncheck/modlist_1.txt \
   build/versioncheck/modlist_2.txt
 

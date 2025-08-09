@@ -6,22 +6,24 @@ from difflib import SequenceMatcher
 def clean_packwiz_text(text : str):
     """Clean text by removing packwiz-specific formatting."""
     mod_list = text.splitlines()
-    for mod in mod_list:
-        start = mod.find('(')
-        end = mod.rfind(')')
+    for i in range(len(mod_list)):
+        start = mod_list[i].rfind('(')
+        end = mod_list[i].rfind(')')
         if start != -1 and end != -1:
-            mod = mod[start+1:end]
-        mod = mod.strip()
+            mod_list[i] = mod_list[i][start+1:end]
+        mod_list[i] = mod_list[i].strip()
+        #print("debug2:",mod_list[i],'\n')
     return mod_list
 def clean_normal_modname(mod_text : str):
     """Clean mod text by removing launcher-specific formatting."""
     mod_list = mod_text.splitlines()
-    for mod in mod_list:
-        start = mod.find('[')
-        end = mod.find(']')
+    for i in range(len(mod_list)):
+        start = mod_list[i].find('[')
+        end = mod_list[i].find(']')
         if start == 0 and end != -1:
-            mod = mod[end+1:]
-        mod = mod.strip()
+            mod_list[i] = mod_list[i][end+1:]
+        mod_list[i] = mod_list[i].strip()
+        #print("debug1:",mod_list[i],'\n')
     return mod_list
 def compare_mods(mod_list1 : list, mod_list2 : list):
     """Compare two lists of mods and return a list of differences."""
