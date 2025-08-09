@@ -15,7 +15,7 @@ find mods -name "*.jar" -exec basename {} \; >> build/versioncheck/modlist_2.txt
 
 # 步骤3：更新并切换到 upstream/main
 echo "更新并切换到 upstream/main..."
-git pull upstream main && git checkout upstream/main
+git fetch && git checkout upstream/main
 
 # 步骤4：生成modlist_1.txt
 echo "生成 modlist_1.txt..."
