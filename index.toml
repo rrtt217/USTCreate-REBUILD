@@ -414,7 +414,7 @@ metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
-hash = "beb9d476046141e80148fd83a401cf70f82641c30163e223e9ba7d204b00d729"
+hash = "ca25d51bb1980d36edc8aa9ddf521464bb2bde0e8e9a6f2358c6fec93d75f6b6"
 metafile = true
 
 [[files]]
@@ -748,7 +748,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeroplus.pw.toml"
-hash = "2bb4fb9e09ba14a19e1549988923ffd6b5a60ab8264747f644045ee9db36c19b"
+hash = "c94715a3e84e1ae17365f6cd679f67a57b75f1d8cce709104297fa5daa2e7b8f"
 metafile = true
 
 [[files]]
