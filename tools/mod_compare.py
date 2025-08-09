@@ -43,7 +43,7 @@ def compare_mods(mod_list1 : list, mod_list2 : list):
             ratios = []
             for mod2 in mod_list2:
                 ratios.append(SequenceMatcher(None, mod, mod2).ratio())
-            if max(ratios) > 0.8:
+            if max(ratios) > 0.5:
                 common_but_different_version_mods.append((mod, mod_list2[ratios.index(max(ratios))]))
                 mod_list1.remove(mod)
                 mod_list2.remove(mod_list2[ratios.index(max(ratios))])
