@@ -390,7 +390,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-steam-n-rails.pw.toml"
-hash = "caa0aad2f0ef5f82f2e26f09191931513cdfec1462793f1ad72f249b868cf983"
+hash = "2ad430fa5ca6941fbb645e48d3cce6d6f176be571e7baba08b1fc983caa823a5"
 metafile = true
 
 [[files]]
@@ -650,11 +650,6 @@ metafile = true
 [[files]]
 file = "mods/polylib.pw.toml"
 hash = "947d5f3b9213360b68e9b65a8d2d5111939e82e248cf61eb02137f119c6eaeb6"
-metafile = true
-
-[[files]]
-file = "mods/probejs.pw.toml"
-hash = "25f4863fba654a2b603a90f52ce5f0e17871c4249fd5c7bef3d40a6c8d9e36de"
 metafile = true
 
 [[files]]
