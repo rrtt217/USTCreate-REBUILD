@@ -435,6 +435,11 @@ hash = "4e81241ba2da06f425efc5e09fb6b38470125c1581c39e1310c5843a0b96ec76"
 metafile = true
 
 [[files]]
+file = "mods/athena-ctm.pw.toml"
+hash = "e11ddca37c00c8cdf8ee89c7b59df544f50966d2d6c5b016916f023afb98c02e"
+metafile = true
+
+[[files]]
 file = "mods/balm.pw.toml"
 hash = "94910057d9bf56c60c393a3cfe745f78c971005d74d9992462be7527c13315c2"
 metafile = true
@@ -467,6 +472,11 @@ metafile = true
 [[files]]
 file = "mods/chat-heads.pw.toml"
 hash = "cd158052ad85da0c90c9613564f10999ca6c26fe527b77355686d22bdcca100e"
+metafile = true
+
+[[files]]
+file = "mods/chipped.pw.toml"
+hash = "b0732421ae2999d558a7b70a11fa86a93738ca33f6f3ec343017796df9c47d9c"
 metafile = true
 
 [[files]]
@@ -584,6 +594,16 @@ hash = "0874095a839113e38dd1be0c587f3b23f444ddd38d36a0232ca7cdcaeddcb49e"
 metafile = true
 
 [[files]]
+file = "mods/dragns-valiant-vehicles.pw.toml"
+hash = "89cb0d9d69a24f1c3a3fa1ed236728fc5a8ad3851739b8352e5d0771ce0bcd2d"
+metafile = true
+
+[[files]]
+file = "mods/dragns-vv-refueled.pw.toml"
+hash = "7126c62f3f8cece24800d388b1062544136dc497679536516b2ecd45978290da"
+metafile = true
+
+[[files]]
 file = "mods/drawers-tooltip.pw.toml"
 hash = "7355cafde971eacc9bd2f528beb28d5836ea2fa4bef62a47d0869e4439202cda"
 metafile = true
@@ -610,7 +630,7 @@ metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
-hash = "2488f05e2315a7ed667ae59340cea8f85bd66a260105164c756c066e121edc52"
+hash = "adb2bda1a252ee89fa32e32e124edd2748b1535887aa0cc76ef9a4c58c9150cc"
 metafile = true
 
 [[files]]
@@ -640,6 +660,11 @@ metafile = true
 [[files]]
 file = "mods/ftb-backups-2.pw.toml"
 hash = "b3693e7a5647d4e28fc30ad3e85193c668a98a410dc3f425f19561cfea68957f"
+metafile = true
+
+[[files]]
+file = "mods/geckolib.pw.toml"
+hash = "88f142bda6bfa6aff4f4d4e12b8ba7581aa40e3f163039a533f09dd6d634e093"
 metafile = true
 
 [[files]]
@@ -845,6 +870,11 @@ metafile = true
 [[files]]
 file = "mods/renderscale.pw.toml"
 hash = "6e47fdb4cfc1bc0f8e10cbeed6579952dbe84eea133158198635009b6d02fd90"
+metafile = true
+
+[[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "5c07edd0c8fe82e85efd6c027476ba54cf98291526803b74614c3436292e4ab6"
 metafile = true
 
 [[files]]
