@@ -580,7 +580,7 @@ metafile = true
 
 [[files]]
 file = "mods/dragns-valiant-vehicles!.pw.toml"
-hash = "649f59afeb9cf663860fb5638a51baa9d545c43648f3989f30e65a515fe9a0e1"
+hash = "0874095a839113e38dd1be0c587f3b23f444ddd38d36a0232ca7cdcaeddcb49e"
 metafile = true
 
 [[files]]
@@ -660,6 +660,11 @@ metafile = true
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "30827b8be019bddb21a75d16b62afb249400e7723b884eb8db921bf66e123f5e"
+metafile = true
+
+[[files]]
+file = "mods/immersive-aircraft.pw.toml"
+hash = "d150fa1845c5cd2b017c202e1792a6fe5c5155c34ceb710213370d8d83819924"
 metafile = true
 
 [[files]]

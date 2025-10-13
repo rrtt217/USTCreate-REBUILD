@@ -83,7 +83,7 @@ def compare_mods(
                 best_match = candidate
 
         # 检查是否达到相似度阈值
-        if best_ratio > 0.5 and best_match:
+        if best_ratio > 0.8 and best_match:
             common_but_different_version_mods.append((mod, best_match))
             if mod in remaining_mods1:
                 remaining_mods1.remove(mod)
