@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".claude/settings.local.json"
-hash = "5633de52f50b5c44cc85ec88cd820c1cfb849b66ae1305763efb5bcca415820d"
-
-[[files]]
 file = "README.md"
 hash = "c0f1e2c43da69638843775fd0960f882feb48f052750eade7d5930513416ef82"
 
@@ -975,10 +971,6 @@ metafile = true
 file = "mods/xaeros-world-map.pw.toml"
 hash = "2bb8c65e92264ca78b851a7e04461d9ef2c1e0bfab532ece8cefed5330680653"
 metafile = true
-
-[[files]]
-file = "options.txt"
-hash = "e7a57f648ee38d067bc3eb336d4b350abbc9f6cc871093c8988a6feca43cc384"
 
 [[files]]
 file = "servers.dat"
