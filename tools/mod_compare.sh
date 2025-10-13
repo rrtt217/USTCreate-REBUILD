@@ -1,5 +1,4 @@
 #!/bin/bash
-set -e
 
 # 使用说明
 usage() {
