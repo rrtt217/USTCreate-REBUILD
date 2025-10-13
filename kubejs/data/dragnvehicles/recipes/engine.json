@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "CTC",
+    "CBC"
+  ],
+  "key": {
+    "C": { "item": "create:iron_sheet" },
+    "T": { "item": "create:fluid_tank" },
+    "B": { "item": "create:empty_blaze_burner"}
+  },
+  "result": {
+    "item": "dragnvehicles:engine"
+  },
+  "show_notification": true
+}

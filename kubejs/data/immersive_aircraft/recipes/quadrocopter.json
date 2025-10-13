@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PAP",
+    "-S-",
+    "PEP"
+  ],
+  "key": {
+    "A": { "item": "create:brass_casing" },
+    "E": { "item": "immersive_aircraft:engine" },
+    "P": { "item": "create:propeller" },
+    "S": { "tag": "create:seats" },
+    "-": { "item": "bamboo"}
+  },
+  "result": {
+    "item": "immersive_aircraft:quadrocopter"
+  }
+}

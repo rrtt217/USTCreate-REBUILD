@@ -314,7 +314,7 @@ metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
-hash = "de0ab85ea06d797c2b3b5c70c8f1fdfc1f76fb2530f792a89f4f6d9807fc649a"
+hash = "cd158052ad85da0c90c9613564f10999ca6c26fe527b77355686d22bdcca100e"
 metafile = true
 
 [[files]]
@@ -418,12 +418,17 @@ metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
-hash = "a4951ecaffb991efc394980cb2dfc5efcb9cda8f675fb8d3e0bcd082cf8dfd2a"
+hash = "7cf3854bd280459d87fd301a4223095955b34e5b91fd58de2c1d28dc333a0272"
 metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
 hash = "87ae829e30cba7bcaefdce95f7cea1c898e9c7cea9eee77895f20caf5d6d0698"
+metafile = true
+
+[[files]]
+file = "mods/dragns-valiant-vehicles!.pw.toml"
+hash = "649f59afeb9cf663860fb5638a51baa9d545c43648f3989f30e65a515fe9a0e1"
 metafile = true
 
 [[files]]
@@ -448,7 +453,12 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "ba33e2257a6e3e4ae195919d16fdb142c326261bd0ea57560820f8d9fd9e324e"
+hash = "b597014c87e5dba13a0c5942456e07588a7a1c806f83016dd18be4ae4046fcf4"
+metafile = true
+
+[[files]]
+file = "mods/every-compat.pw.toml"
+hash = "2488f05e2315a7ed667ae59340cea8f85bd66a260105164c756c066e121edc52"
 metafile = true
 
 [[files]]
@@ -463,7 +473,7 @@ metafile = true
 
 [[files]]
 file = "mods/flerovium.pw.toml"
-hash = "eb132a98896606d5798ccddf2b012a0f2061e21e8779202912046f9d91cf3e28"
+hash = "57b4b547bb2a5236b6ff1c5b4feedc8853891d7786751f6b75397319794fd301"
 metafile = true
 
 [[files]]
@@ -498,6 +508,11 @@ metafile = true
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "835bd8b05a05ce6c0981ddc37c49e4c476aa0414cc2a5321fd9f8994193b6feb"
+metafile = true
+
+[[files]]
+file = "mods/immersive-paintings.pw.toml"
+hash = "3aa4d2e503b7a4544868954aa8175335ee34714a8b44cc2a41cdbb833e271c31"
 metafile = true
 
 [[files]]
@@ -602,7 +617,7 @@ metafile = true
 
 [[files]]
 file = "mods/modern-ui.pw.toml"
-hash = "9d88f59f7c3e8aa79561c758e9eeb92f05cca0d652979ab593768f87607351ad"
+hash = "fb078f45d04576d994b31f76911eedf74aa6b4ca5ed177eedffd0853887cf97f"
 metafile = true
 
 [[files]]
@@ -656,6 +671,11 @@ hash = "6228ae1e24e5f876d3feff6b45762a20fc496f1c3f7e48972d45446e42d095bc"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "55c6d0b8ee25fd6a37a964805de3d2eab3f20d73a88ba77a63b4a51fd985d9dd"
+metafile = true
+
+[[files]]
 file = "mods/polylib.pw.toml"
 hash = "a6d572b0365f9f0a6c044066e3e222cb088ef148f08c05e6638819e391a40920"
 metafile = true
@@ -683,6 +703,16 @@ metafile = true
 [[files]]
 file = "mods/searchables.pw.toml"
 hash = "b8c7497acbf4890b4609b6b20de7affdd3482fc99af975d9ff6b29c075e1d8a7"
+metafile = true
+
+[[files]]
+file = "mods/sodium-dynamic-lights.pw.toml"
+hash = "82bb7cd6c8b68bb1831bb7c374bd316b6403cd01195d582f19c31076c908953a"
+metafile = true
+
+[[files]]
+file = "mods/sodium-options-api.pw.toml"
+hash = "75a60e6b443b351b7a4a78ffce7c71e44b3e20ca10c374aea1de516c785d6e2d"
 metafile = true
 
 [[files]]
@@ -731,6 +761,11 @@ hash = "6f1d490b7da3e30a96bf49588f3e4a6989be3368478622959a3f1f4fbe54198b"
 metafile = true
 
 [[files]]
+file = "mods/touhou-little-maid.pw.toml"
+hash = "13f4f153958e055c656d8c7410a004f6a10e7372a5e996dde140c25c49e2616b"
+metafile = true
+
+[[files]]
 file = "mods/ustcreate-1.0.3.jar"
 hash = "6abb8c71b0f21f5d3f0ae93d2bd02168851475108a0bb1c5871ef14d6faeafcf"
 
@@ -751,7 +786,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeroplus.pw.toml"
-hash = "c06bd983315d314fc74b198ec25f831c39fe14fe3ed3ee73c3ce9039a73d5ea9"
+hash = "30579c4ad657e07e0abc129575fc0b080fa766d33adaaa0d1fa9380b41c54f12"
 metafile = true
 
 [[files]]

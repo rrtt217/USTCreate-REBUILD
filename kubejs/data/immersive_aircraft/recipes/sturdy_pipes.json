@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  P",
+    "IPI",
+    "P  "
+  ],
+  "key": {
+    "I": { "item": "create:iron_sheet" },
+    "P": { "item": "create:fluid_pipe" }
+  },
+  "result": {
+    "item": "immersive_aircraft:sturdy_pipes"
+  }
+}
+

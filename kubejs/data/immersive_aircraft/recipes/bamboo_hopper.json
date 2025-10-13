@@ -1,0 +1,24 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "H": { "item": "create:brass_casing" },
+    "E": { "item": "immersive_aircraft:engine" },
+    "P": { "item": "create:propeller" },
+    "S": { "item": "create:white_sail" },
+    "_": { "tag": "create:seats" },
+    "B": { "tag": "bamboo_blocks" }
+  },
+  "pattern": [
+    "   S ",
+    "   S ",
+    "S  EP",
+    "BBH_ ",
+    "S  EP",
+    "   S ",
+    "   S "
+  ],
+  "result":{ "item": "immersive_aircraft:bamboo_hopper" },  
+  "show_notification": false
+}
+
