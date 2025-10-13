@@ -133,7 +133,7 @@ def generate_modlist_for_branch(branch_name, output_file):
     # 使用packwiz生成mod列表
     run_command("./packwiz refresh")
     packwiz_output = run_command("./packwiz list -v")
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w+') as f:
         f.write(packwiz_output)
 
     # 添加.jar文件信息
