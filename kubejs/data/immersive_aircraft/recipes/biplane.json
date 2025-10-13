@@ -1,0 +1,21 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "H": { "item": "create:brass_casing" },
+    "E": { "item": "immersive_aircraft:engine" },
+    "P": { "item": "create:propeller" },
+    "S": { "item": "create:white_sail" },
+    "_": { "tag": "create:seats" }
+  },
+  "pattern": [
+    "   S ",
+    "S  S ",
+    "HH_EP",
+    "S  S ",
+    "   S "
+  ],
+  "result":{ "item": "immersive_aircraft:biplane" },  
+  "show_notification": false
+}
+

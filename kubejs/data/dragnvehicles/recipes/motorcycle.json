@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "dragnvehicles:motorcycle_body"
+    },
+    "B": {
+      "item": "dragnvehicles:wheel"
+    }
+  },
+  "pattern": [
+    " A ",
+    "B B"
+  ],
+  "result": {
+    "item": "dragnvehicles:motorcycle"
+  },
+  "show_notification": true
+}

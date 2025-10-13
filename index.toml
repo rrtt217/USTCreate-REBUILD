@@ -69,7 +69,7 @@ hash = "ad94ae9eb95b9cc7d722a3d73d7203cb74087a6513b33b35ee6007557b533f2c"
 
 [[files]]
 file = "kubejs/assets/ustcreate/lang/zh_cn.json"
-hash = "b93029bb26e0319acfaed81b25f3631babd13e1b525f48cd36ccd62f559c8158"
+hash = "49286215b1ea66fe0e1181444a8d4ffaab6edbb2d04265bff14f87cbbf7592f2"
 
 [[files]]
 file = "kubejs/assets/ustcreate/textures/item/amethyst_dust.png"
@@ -105,35 +105,175 @@ hash = "0db39e983a94ccc2790c9fcdce725c422175bc7427592c9cf85b03a4ead599bc"
 
 [[files]]
 file = "kubejs/client_scripts/coin_display.js"
-hash = "338bd37103e862098db2f660d057954bbf66427507853e2d233f68c3338639af"
+hash = "e0478aa2d08fbe315f16a3e1f9733968b9d8d55198a1e0984c7b53c871cefbdb"
 
 [[files]]
 file = "kubejs/client_scripts/key_bind.js"
 hash = "790cb90c55890f607c5845535efb0a24c41a1760d0a6188f29c73255f24c6dfb"
 
 [[files]]
+file = "kubejs/client_scripts/update1/info.js"
+hash = "785975c20638bce69dc7954d5a19ef8203b796765d5a3fc867d98601c591aafc"
+
+[[files]]
+file = "kubejs/config/client.properties"
+hash = "9a46b9ef957b1e86963c53b0b85d787e7f21c989bb87580ab1a3eaef6ca91bf4"
+
+[[files]]
+file = "kubejs/config/common.properties"
+hash = "c2ca7d0152bf33239ff60595034b65b9179f0f2abc858f2b9fc5ceb9220bcc58"
+
+[[files]]
+file = "kubejs/config/probejs.json"
+hash = "eb0bfaed60482e4e159ff4e2452cc098de57689f7cc82b4c9d9f112548173da6"
+
+[[files]]
+file = "kubejs/data/dragnvehicles/recipes/engine.json"
+hash = "da2c89f44d78e69cdf6bcf76c4b4841ae467b017ab37f7fb956bcb9c26428935"
+
+[[files]]
+file = "kubejs/data/dragnvehicles/recipes/motorcycle.json"
+hash = "994999bcccbb0d2231fd4ac861c64f913fa55bc74b9a2c4e45750779533bf732"
+
+[[files]]
+file = "kubejs/data/dragnvehicles/recipes/motorcycle_body.json"
+hash = "8e94c2f3e5ebd6816ca8da4d66169b2ab692e1a8a61eac297a441453517a7f05"
+
+[[files]]
+file = "kubejs/data/dragnvehicles/recipes/sports_engine.json"
+hash = "6e5d199bbbc1e3beaab652fe2f60ea1bf793680b8020ade6d3f609dbf8fdbb99"
+
+[[files]]
+file = "kubejs/data/dragnvehicles/recipes/sports_wheel.json"
+hash = "6e5d199bbbc1e3beaab652fe2f60ea1bf793680b8020ade6d3f609dbf8fdbb99"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/airship.json"
+hash = "1bf1bb6ee4ce30aa2591cec765aebe1badc4be771c354c8cba620285de01ada1"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/bamboo_hopper.json"
+hash = "fdd22c4d10446f23d1af62e512356d24518b559ad630107570f2091171480a20"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/biplane.json"
+hash = "e395d2d60c8a0335631fe26d6b302321c2f2a3e2428219e6be2aced2af90f2c6"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/cargo_airship.json"
+hash = "34f30de570a8553ca3c746c7bf0503a38c57eac50393c52ffc0cec978a7f789e"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/gyrodyne.json"
+hash = "b01eb44eea63e706f0b7eef23e826c6cdc6a1278c58b1324d04c024df018efe6"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/quadrocopter.json"
+hash = "95121f12ed6eb599e579f8ca5c8f4cccbc003b21ef3c1cfc9db8628a4af36652"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/aircraft/warship.json"
+hash = "ebe35571fed0fe5fe9926ec19af4f2a6ae1c61e573442970ee99d4d336bd103a"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/airship.json"
+hash = "6a01f9dbdf69d31919437d9c047c4ff4675c04cf52cce14fef8063350d87434a"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/bamboo_hopper.json"
+hash = "a8b5c6e735ce08d38d14e0d345d36b450855a4daa8014c8a3082f1bcdc1eba1b"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/biplane.json"
+hash = "c392c5f24ce0fbbce11e0863f727a89bed7a88fd9b32058894ed707ae72bdf15"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/boiler.json"
+hash = "940478133cd59569f70ceb8da218ac7705915da0417ab219b2db8531f56712b5"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/cargo_airship.json"
+hash = "cdd3752a2c325f43fa8b92abe1df4907590582af66943b321a7341ee1d7178f6"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/engine.json"
+hash = "5f3754899e761611e0876d11ee15db697e277eba2c0d2819fa02d92fca7c961a"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/enhanced_propeller.json"
+hash = "a003ded0bfa623318a59dcc6b90c4adf9753f0097d5b8bcbf33184f0bf0fb72c"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/gyrodyne.json"
+hash = "e00cc5cbc3a7b7bd6d01729cf19e979788c1597bcaf65a58804c8524cbc32e09"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/hull.json"
+hash = "e00cc5cbc3a7b7bd6d01729cf19e979788c1597bcaf65a58804c8524cbc32e09"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/hull_reinforcement.json"
+hash = "e7db4e1930047591aed5b31364a5f6df46c8e86193693f5f9659bd7dbfb63b9b"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/industrial_gears.json"
+hash = "265cf62e40d3460622794bfba4a4c1367bf7d2ca75390ebb2b5b5ab84dcdd1c6"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/propeller.json"
+hash = "e00cc5cbc3a7b7bd6d01729cf19e979788c1597bcaf65a58804c8524cbc32e09"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/quadrocopter.json"
+hash = "e285ef53baee3267f9761c65c797313bebe0a0e85615fde2a4d07396888aba4a"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/sail.json"
+hash = "e00cc5cbc3a7b7bd6d01729cf19e979788c1597bcaf65a58804c8524cbc32e09"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/sturdy_pipes.json"
+hash = "3a16cffdf46e35e8dddd840011f76acfef79b52fdf242417c7c35254bb8dc21b"
+
+[[files]]
+file = "kubejs/data/immersive_aircraft/recipes/warship.json"
+hash = "51108c2b04ba4deaecc925917e301b9ad7e3c3ab0c16d045bc48f39264fe81b8"
+
+[[files]]
 file = "kubejs/jsconfig.json"
 hash = "121ec9d7902090c050b096aa83792aeb7580946392785f5bae5f8e4bc6dbcce4"
 
 [[files]]
+file = "kubejs/kjs_backup2025.10.05(w.o.tacz).zip"
+hash = "f2c434c42105128d2e2610692c9a960f250f104712fcc3df64cb10bf7953be65"
+
+[[files]]
+file = "kubejs/kjs_backup2025.10.05(w.tacz).zip"
+hash = "ddd23b7e367c2d8998a8ede4139084a33673b1d7b20a00b57fb930ad7288ea69"
+
+[[files]]
+file = "kubejs/server_scripts/bkup.zip"
+hash = "9684fa595e974fbe641113576720eeee91c2c182226326fb5d4c8e8a8eff0a70"
+
+[[files]]
 file = "kubejs/server_scripts/features/coin.js"
-hash = "8a171dddbc0b15611f943f8d6aa9ec3e09996f1bcb585704f25b88e52e7562aa"
+hash = "a7ed8e19f51f4af795ba562106a9ff9b37f25474397d5459f4701fe76a380b6c"
 
 [[files]]
 file = "kubejs/server_scripts/features/flowers_grow.js"
-hash = "3fb64565947f4e891c4aa11fd44aa6f531f715da8ebe8156961dd4da52a0ec77"
+hash = "4900f18db55cbe5a2b377c74930157d8fb4e523a56e8f906706ab3c600b4d270"
 
 [[files]]
 file = "kubejs/server_scripts/features/sculk_shrieker_adjustment.js"
-hash = "4e0e4fafb556c29f2c22835f78e8f7ecca6e85955aac34ef58a1a30faec7a015"
+hash = "0f5549b88e1ec05cc94164877e2ddce7861218cf0e21e5019b2e7b56300b5226"
 
 [[files]]
 file = "kubejs/server_scripts/heads/miaoning.js"
-hash = "99924416d3405db876d25b6809a2a521f921ce8700628218e97882b83dc5ea6f"
+hash = "7b7699a2dcf3a461e06f564e3a82d6ff7cafd1f76ea0aa7ac448357f153f093d"
 
 [[files]]
 file = "kubejs/server_scripts/heads/mysterious_conversion.js"
-hash = "b492d068e60ee22e6c4b640f95dd8c35a0fc74b2253e7ca37e03331958745094"
+hash = "580b19d340f006f75458ebdd7631eee9017f6f772576771b60dd477b0eea659a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/bioms'o'plenty/rainbow_birch.js"
@@ -145,7 +285,7 @@ hash = "a7069af383bfdab98e18a9bfa74d1dfd2c6d3906dee76b54c440aebfd614ad7e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/bioms'o'plenty/sand.js"
-hash = "260efd9ec5c01b9417d217596a9910573c305e9a677224420a769b517caa4f96"
+hash = "d5886f385c66f90e97e6f64c99191497518673e4bbd440ad50f481a3b29cac49"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/blaze_burner.js"
@@ -153,11 +293,11 @@ hash = "cfd3e2064daa480cc29f7518329ea8579042e4fab646e19d65bc6f68b495275c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/create/electron_tube.js"
-hash = "d2da0f36cc289db7d688c4915c4808fab31e0662e9f5d84c85140bcfe8a0d42c"
+hash = "43e101b498c81c3f9b35c8af26cf720028050be3fa7b6b5606fb6800457fc7a3"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/farmers_delight/pie_crust.js"
-hash = "2e7eb10418419582c726e630ff8d81332fcea27df75ea1f9ce5eb98f98e4b6a4"
+hash = "4ac4eeedc7feb4671c98e0d16783d863c675355877c6d9802d7cd4cb7297577b"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/blaze_rod.js"
@@ -177,11 +317,11 @@ hash = "7a07fe29f6d448a9a2a9689f422f527963a7147af03c09e4e1244bbcad1112dc"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/mycelium.js"
-hash = "461cbc67f2a57bd5c01b58e3a44c88602ec1f4d5019ac688dbe0eaf01db24ca5"
+hash = "b8a9e55c2137a2a40ac92349f31cf407d0cbd123870bb8fd725ef95eddaa430a"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/spider_eye.js"
-hash = "7a05a40904d013c85f82fff25f0e996e0e5560d1b8cd21b86d11b29103013b92"
+hash = "20be7d0742ecc460dd9fec38ac6383c1fd5c023bec93f7a1965bb4b443f573e6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/minecraft/spore_blossom.js"
@@ -193,39 +333,43 @@ hash = "583b0c3e573b40a96d78553af4399898a1d89525bf3c36459de5472c3f460873"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/removed.js"
-hash = "898d3522104f4a0dc01f5f9d17e48b65aa7e2d7cfbff262854bef7c458864f56"
+hash = "430fc08a933762e66d48ac2c1e82f7f21cf93794ae60d9e9eaf022ee2f9bb4b1"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/replaced.js"
-hash = "b08435bf5b6b97a2ec87aa7ef2a14f3355b1416d73542f5e8b82cf8d99d1e9b3"
+hash = "02eec4b7c8b622e88668e6118f79bcd7281368d8856fe969643eba9e5e73ede6"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/burnt_metal.js"
 hash = "0bd1fe0079260f7cd59000493e2c1528f05f7c39fce617f530ae07ed6828630e"
 
 [[files]]
+file = "kubejs/server_scripts/recipes/tconstruct/liquid_coal.js"
+hash = "6db8ba127b71191a9062fd2b2a643825b3578bd165e1d6be95adee01d916308b"
+
+[[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/molten_andesite.js"
-hash = "02dc0c7f16acde1ab1e2146a5397fcfb4e6a7d8a04802c0a3798a2d3f837e984"
+hash = "e5129853061068269c4274c06a12d61545c9ed1dc6ec0f12d9c7a7304cadb34f"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/molten_andesite_alloy.js"
-hash = "c724b8b1fc0e561bd3c8708c3accb8dda4dea2da543251fd9797ec3c6534fa07"
+hash = "41133887042cf9167ac388a95618faf6fc54e4aa799587a335758494803b5dc9"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/steel.js"
-hash = "a34fb039bde63c3e0683428039adecb35cbf9c4cad8e1453c1397616eda32654"
+hash = "ac5752c2d3f937440923f538a0124863ebcab92bfe33c74814893f441cbb3b3c"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/tconstruct/venom.js"
-hash = "576fe3c78c1999a12ea601c98e04b67ac609d511912e95f2e8976605ea14d63b"
+hash = "47e5a8a07e3853694561c41f200f75b42c397e28cae6dc2120051c0a517b1926"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/amethyst_dust.js"
-hash = "6aa5c9326c12dc22809fc3ee5db2c8435c2b5ab011d8bc7ed0940020ccafcbce"
+hash = "4e3c99d68cbe9218c33092e2f630e51be352a5d102b699db3779cef31cf0e95e"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/coins_recipe.js"
-hash = "b9cefe0d095e4d79b8098e3231b9916ee45017efd96933f084dfa69ff36fb91c"
+hash = "e4ee4608336e9b761c355d608fbe26fb4fb74bd95921ca61b9e2990b971a7b00"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/liquid_dragon_breath.js"
@@ -233,35 +377,47 @@ hash = "0752cffba601e48966abf5ef65b6e908431d6dd37446d50ecd6283e6571207f8"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/liquid_rose_quartz.js"
-hash = "2e7ce69999dcd45297df999237d6546733e518144d61c8d1ddc5abd08a4e02bb"
+hash = "5e8ab12ecf04a6fa8dbb979a6d18e3849ee339508b461f96480f65a94fab5bac"
 
 [[files]]
 file = "kubejs/server_scripts/recipes/ustcreate/sulfur.js"
 hash = "2202f7e555302e3a1c63ea60b28489cd773233196661b717bc42ca6d5cd2c961"
 
 [[files]]
+file = "kubejs/server_scripts/store_command.js"
+hash = "004eb6d2df439f3695ce0d831f4d150afb0ade8419b70a10f4f81fa9a4c186c3"
+
+[[files]]
 file = "kubejs/server_scripts/tags/createdeco_sheets.js"
-hash = "c447ac1a51972b0deb68ab2a6e44a9af8df3d2d55be7d66becc1ef60fbb8ec24"
+hash = "2a7ea9a442d664981578a0f8218aa97ae7517cc7c77d3a26eb9613836a7e3d84"
+
+[[files]]
+file = "kubejs/server_scripts/update1/refueled.js"
+hash = "0a63c651adab503a376ce473ef280ded000477e05d0ae3e78bf4670c6c93460a"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_mixin.js"
-hash = "cbbff4dbf19d33f41dc114b711a1d09a57148f7950cb6cb8d9813ef84a4d9f2c"
+hash = "b9f076c025348fb5bcd92f68b91d49dd03e2bad15c015c34c1f990b768d45c0c"
 
 [[files]]
 file = "kubejs/startup_scripts/fluid_registry.js"
-hash = "b1c8faa6a4cd3c24743bee5fa128230bb81b6d6ca0aca5126c74636e9fddab7b"
+hash = "8ed9627c360b372f8df76a557724f8df63bd0e262d0e1e94a6211e111e007722"
 
 [[files]]
 file = "kubejs/startup_scripts/global_var.js"
-hash = "2b8fd9c12b52ec50bf40d717465f613348cb7c9a304d3cca30aa24a1f177f979"
+hash = "165bdd9080a2d7e7c0a1e92d91d2e62e132156933d7b27dd26f6d9de3420554b"
 
 [[files]]
 file = "kubejs/startup_scripts/item_registry.js"
-hash = "5e00b87c80b626e46276e77d5a879117023e1cf84fdd14180eac5d408b7a7df2"
+hash = "1bb2fc6b951ed9d379cbcf2c5f9c6929b2c90979a58b3c30311db0b8211337c9"
 
 [[files]]
 file = "kubejs/startup_scripts/key_registry.js"
 hash = "e2ceb498d4f89424e6c49d8dd7dd4f89d58893a3bc3f350280fb9ef3ab536ed0"
+
+[[files]]
+file = "mods/StorageDrawers-forge-1.20.1-12.14.3.jar"
+hash = "fead68d01b16ac9fb58d0cc6ee50042df8a2fe6df16443e5db6155e0b2da0c29"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
@@ -276,6 +432,11 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "5e9edd1fd2395f14a0c8a4acbdbdd61e1047be1f0033deb3140d2ce0d093e9d8"
+metafile = true
+
+[[files]]
+file = "mods/athena.pw.toml"
+hash = "9638d8a308563842fd989970919a51f37ed1bcc82372bff47fc5a5c2e6de738e"
 metafile = true
 
 [[files]]
@@ -310,7 +471,12 @@ metafile = true
 
 [[files]]
 file = "mods/chat-heads.pw.toml"
-hash = "3354f731d77d7ac8e2b67ff75fad3269ba5aeed3c3f9b054e53faaa10081941d"
+hash = "30692fab462e6b1df275768d323be20373bccae1e05ee5abe5a2a7a8814ae894"
+metafile = true
+
+[[files]]
+file = "mods/chipped.pw.toml"
+hash = "71a33fe41bead909b3e95643351ef8015def70d3cb083916469f492f66434b45"
 metafile = true
 
 [[files]]
@@ -345,7 +511,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-better-fps.pw.toml"
-hash = "f1fcfad8f0e4de7b39b72c5515c1753431599cf88318283233a7acfbf524b517"
+hash = "a5f38a0bfa593b2bb61ef3cf08006a66d204555b10890244a1b629f983375265"
 metafile = true
 
 [[files]]
@@ -399,8 +565,8 @@ hash = "26b5eb49763ba8b3078ea93222f2b73e86ad4b3b2030a1b7628aab37b9061ae2"
 metafile = true
 
 [[files]]
-file = "mods/create_freight-1.20.1-0.1.0.jar"
-hash = "e4a8c740a2b0c5b6282b8549a9d5d297ba6e440cc33d46ee97a8cc9eff4f731d"
+file = "mods/create_freight-1.20.1-0.2.0.jar"
+hash = "c2f23ddb733336ea2c08930cc06d346602174422597f141371ae5717381ca0e2"
 
 [[files]]
 file = "mods/cuisine-delight.pw.toml"
@@ -414,12 +580,22 @@ metafile = true
 
 [[files]]
 file = "mods/customskinloader.pw.toml"
-hash = "ca25d51bb1980d36edc8aa9ddf521464bb2bde0e8e9a6f2358c6fec93d75f6b6"
+hash = "dcac37cb661a576e586751bedf4a35f5608d7fe2fd755c0ec80cb865506c294b"
 metafile = true
 
 [[files]]
 file = "mods/distant-horizons.pw.toml"
 hash = "dd82878623f7b6e17e81143d4daf50c140b88bf1bc52085bac1cbb1a776b4733"
+metafile = true
+
+[[files]]
+file = "mods/dragns-valiant-vehicles.pw.toml"
+hash = "1a8b74bfc5201e4bc459cbe2ab7b6bdca17c32658dbcee5071c1a7b3b97d72b1"
+metafile = true
+
+[[files]]
+file = "mods/dragns-vv-refueled.pw.toml"
+hash = "7126c62f3f8cece24800d388b1062544136dc497679536516b2ecd45978290da"
 metafile = true
 
 [[files]]
@@ -444,7 +620,12 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "7d73209261250e67cb69848a7031cca1757fcf026a8d0ad9ff3c803b8cb1ce58"
+hash = "f0ce8be63771e09fdb2bdc6cb012ac7e16ff89983853048e6070c45b42359371"
+metafile = true
+
+[[files]]
+file = "mods/every-compat.pw.toml"
+hash = "117d564c00fcee300d03e9738bfbe5e2541c5dff3eeb76e2a0b9ee73d32eae66"
 metafile = true
 
 [[files]]
@@ -459,7 +640,7 @@ metafile = true
 
 [[files]]
 file = "mods/flerovium.pw.toml"
-hash = "665962e6bb7f42048da794519aa196c60f41130fc695e0c833a11c15f0fc7cb6"
+hash = "2a5cdb9aad4c46f59265cf22caaf4e6fc945db8a8061954dac0e82a5aea7e0c9"
 metafile = true
 
 [[files]]
@@ -495,6 +676,16 @@ metafile = true
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "3dbb0387a1d978c41869c6944ffdc8f22d322eda5c84eef4fd545754846af926"
+metafile = true
+
+[[files]]
+file = "mods/immersive-aircraft.pw.toml"
+hash = "82f389d06c0e19d2ffcd75d5d85e0d9f09ec17178b8dd3e5afe9350a271e0443"
+metafile = true
+
+[[files]]
+file = "mods/immersive-paintings.pw.toml"
+hash = "c006beeec7fca82263506ab1fda78e472e54bb64be350e130902f4f475df25cb"
 metafile = true
 
 [[files]]
@@ -599,7 +790,7 @@ metafile = true
 
 [[files]]
 file = "mods/modern-ui.pw.toml"
-hash = "deddd6639cd0ef6c262fa2d789abf1b96e08195a6f7667ab914b2325b5a43851"
+hash = "8cefeca0a10f86ec77406b59c97fbef335e95236fc8d2d8c7d46075d4aabf8f7"
 metafile = true
 
 [[files]]
@@ -648,6 +839,11 @@ hash = "cc83aa838038bc43e9db3a173b15740108d2c3a38c1398c3a8ed9efd63faa2dd"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "dec2bc011d4ca1d451aaa3eea477f13366bfb13beba0716018f47d9331a50d8e"
+metafile = true
+
+[[files]]
 file = "mods/polylib.pw.toml"
 hash = "947d5f3b9213360b68e9b65a8d2d5111939e82e248cf61eb02137f119c6eaeb6"
 metafile = true
@@ -663,13 +859,18 @@ hash = "3547ad495a9127796b058d82ff46d6c1be6fd0d6bcbd7ef8c6abd3fd5351598f"
 metafile = true
 
 [[files]]
+file = "mods/resourceful-lib.pw.toml"
+hash = "ef0264b7d819848f72ab2f34643306187e712965a8246e1f733e1bd39d8fd681"
+metafile = true
+
+[[files]]
 file = "mods/rhino.pw.toml"
 hash = "ca4411ac6d8a9a892948bb63cd0ba52ae5523ca5e257632d6ae8c933b660c5ee"
 metafile = true
 
 [[files]]
 file = "mods/rubidium-extra.pw.toml"
-hash = "b8c2ba91c889b159d1b85c11293927958401b4df1898dced176bb70984a22259"
+hash = "b6c84acc6f32d012f1bf0da41c8ebda66e26f2d70614a96779e9d6139b186532"
 metafile = true
 
 [[files]]
@@ -679,7 +880,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "4a5d3ec8e5ff7bfb67e3a8dd95e421504fd0daa271979648a785fba7c073c674"
+hash = "46ec2f81b9426aaf381f5310aae30a3d07b356714890419d6926bce537583c57"
 metafile = true
 
 [[files]]
@@ -693,13 +894,18 @@ hash = "bca498a73d554610d0429f255e8b02c661b8d46dacb956be3bc7cf849299b455"
 metafile = true
 
 [[files]]
+file = "mods/stone-zone.pw.toml"
+hash = "1ead38ad49c16af9eefe913c0ea3eb0a2ac3407bc4304dce457a4d196919eb4a"
+metafile = true
+
+[[files]]
 file = "mods/storage-drawers.pw.toml"
-hash = "09b78b4b428e41154a9e38cf34fb9ccd7490dc983da836e436632c43d370a5fb"
+hash = "371b68e257eaca322ca4e95f4aa8d95441d84110b69243dda818f743a0111ba5"
 metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "b6e96f4d009b04c0bc19a0093645db8087347927c41ae526dd3508f8ff44da10"
+hash = "7ff5441d2e7ef66d8c5b3b518266189eca0de0b7f3f5e37cdeab9a7c2147beed"
 metafile = true
 
 [[files]]
@@ -728,6 +934,11 @@ hash = "b1461eb88a7a08c52df58dfedb91c6343eaf7ce1d1613ce0bc675924c49a6c14"
 metafile = true
 
 [[files]]
+file = "mods/touhou-little-maid.pw.toml"
+hash = "6d0c48b34cc7c3a8e873c6e0ee0ec3a0834fb4b35ad38538d6148e2c78ff0a90"
+metafile = true
+
+[[files]]
 file = "mods/ustcreate-1.0.3.jar"
 hash = "6abb8c71b0f21f5d3f0ae93d2bd02168851475108a0bb1c5871ef14d6faeafcf"
 
@@ -748,7 +959,7 @@ metafile = true
 
 [[files]]
 file = "mods/xaeroplus.pw.toml"
-hash = "c94715a3e84e1ae17365f6cd679f67a57b75f1d8cce709104297fa5daa2e7b8f"
+hash = "a288bea54f27d39c1cc8d665005f72c26114fb373d132edb6e11a7d4b6fb4a0e"
 metafile = true
 
 [[files]]

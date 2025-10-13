@@ -1,0 +1,22 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "pattern": [
+    " SSS ",
+    "QESEQ",
+    " T T ",
+    "QRARQ",
+    " RRR "
+  ],
+  "key": {
+    "S": { "item": "create:white_sail" },
+    "A": { "item": "immersive_aircraft:cargo_airship" },
+    "R": { "item": "create:railway_casing" },
+    "T": { "item": "minecraft:string"},
+    "E": { "item": "immersive_aircraft:engine"},
+    "Q": { "item": "create:sturdy_sheet" }
+  },
+  "result": {
+    "item": "immersive_aircraft:warship"
+  }
+}

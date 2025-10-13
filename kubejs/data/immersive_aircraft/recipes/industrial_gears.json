@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " II",
+    "CSI",
+    "CC "
+  ],
+  "key": {
+    "I": { "item": "create:iron_sheet" },
+    "C": { "item": "create:copper_sheet" },
+    "S": { "item": "create:shaft"}
+  },
+  "result": {
+    "item": "immersive_aircraft:industrial_gears"
+  }
+}

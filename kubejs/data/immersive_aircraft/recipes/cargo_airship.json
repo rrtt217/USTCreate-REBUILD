@@ -1,0 +1,22 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "pattern": [
+    " SSS ",
+    "ESSSE",
+    " T T ",
+    "CCACC",
+    " BBB "
+  ],
+  "key": {
+    "S": { "item": "create:white_sail" },
+    "C": { "item": "minecraft:chest" },
+    "A": { "item": "immersive_aircraft:airship" },
+    "B": { "item": "create:brass_casing" },
+    "T": { "item": "minecraft:string"},
+    "E": { "item": "immersive_aircraft:engine"}
+  },
+  "result": {
+    "item": "immersive_aircraft:cargo_airship"
+  }
+}

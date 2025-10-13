@@ -1,0 +1,22 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    " SSS ",
+    "SSSSS",
+    " ~ ~ ",
+    " H_EP",
+    " HHH "
+  ],
+  "key": {
+    "H": { "item": "create:brass_casing" },
+    "E": { "item": "immersive_aircraft:engine" },
+    "P": { "item": "create:propeller" },
+    "S": { "item": "create:white_sail" },
+    "~": { "item": "minecraft:string" },
+    "_": { "tag": "create:seats" }
+  },
+  "result": {
+    "item": "immersive_aircraft:airship"
+  },
+  "acceptMirrored": true
+}

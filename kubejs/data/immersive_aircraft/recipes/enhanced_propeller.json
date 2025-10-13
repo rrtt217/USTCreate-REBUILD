@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB ",
+    " P ",
+    " BB"
+  ],
+  "key": {
+    "B": { "item": "create:brass_sheet" },
+    "P": { "item": "create:propeller" }
+  },
+  "result": {
+    "item": "immersive_aircraft:enhanced_propeller"
+  }
+}
