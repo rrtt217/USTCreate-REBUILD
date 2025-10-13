@@ -83,7 +83,7 @@ def compare_mods(
                 best_match = candidate
 
         # 检查是否达到相似度阈值
-        if best_ratio > 0.5 and best_match:
+        if best_ratio > 0.8 and best_match:
             common_but_different_version_mods.append((mod, best_match))
             if mod in remaining_mods1:
                 remaining_mods1.remove(mod)
@@ -133,7 +133,7 @@ def generate_modlist_for_branch(branch_name, output_file):
     # 使用packwiz生成mod列表
     run_command("./packwiz refresh")
     packwiz_output = run_command("./packwiz list -v")
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w+') as f:
         f.write(packwiz_output)
 
     # 添加.jar文件信息
@@ -201,7 +201,7 @@ def main():
 
     # 为第二个分支生成mod列表
     mod_list2_file = output_dir / "modlist_2.txt"
-    generate_modlist_for_branch(branch2,mod_list1_file)
+    generate_modlist_for_branch(branch2,mod_list2_file)
 
     # 切回原始分支
     print(f"切回原始分支 {current_branch}...")
