@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = ".claude/settings.local.json"
+hash = "5633de52f50b5c44cc85ec88cd820c1cfb849b66ae1305763efb5bcca415820d"
+
+[[files]]
 file = "README.md"
 hash = "f868fd863366d274cba59f0e01902a7c973f6367d5a4ef869d06db98b8b35b78"
 
@@ -244,18 +248,6 @@ file = "kubejs/jsconfig.json"
 hash = "121ec9d7902090c050b096aa83792aeb7580946392785f5bae5f8e4bc6dbcce4"
 
 [[files]]
-file = "kubejs/kjs_backup2025.10.05(w.o.tacz).zip"
-hash = "f2c434c42105128d2e2610692c9a960f250f104712fcc3df64cb10bf7953be65"
-
-[[files]]
-file = "kubejs/kjs_backup2025.10.05(w.tacz).zip"
-hash = "ddd23b7e367c2d8998a8ede4139084a33673b1d7b20a00b57fb930ad7288ea69"
-
-[[files]]
-file = "kubejs/server_scripts/bkup.zip"
-hash = "9684fa595e974fbe641113576720eeee91c2c182226326fb5d4c8e8a8eff0a70"
-
-[[files]]
 file = "kubejs/server_scripts/features/coin.js"
 hash = "a7ed8e19f51f4af795ba562106a9ff9b37f25474397d5459f4701fe76a380b6c"
 
@@ -414,10 +406,6 @@ hash = "1bb2fc6b951ed9d379cbcf2c5f9c6929b2c90979a58b3c30311db0b8211337c9"
 [[files]]
 file = "kubejs/startup_scripts/key_registry.js"
 hash = "e2ceb498d4f89424e6c49d8dd7dd4f89d58893a3bc3f350280fb9ef3ab536ed0"
-
-[[files]]
-file = "mods/StorageDrawers-forge-1.20.1-12.14.3.jar"
-hash = "fead68d01b16ac9fb58d0cc6ee50042df8a2fe6df16443e5db6155e0b2da0c29"
 
 [[files]]
 file = "mods/alltheleaks.pw.toml"
