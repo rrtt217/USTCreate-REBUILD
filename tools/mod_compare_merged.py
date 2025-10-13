@@ -122,6 +122,15 @@ def switch_to_branch(branch_name):
     run_command("git fetch")
 
 
+def extract_last_parentheses_content(line: str) -> str:
+    """截取每行最后一个配对括号中的内容，如果不存在则保留原内容"""
+    start = line.rfind('(')
+    end = line.rfind(')')
+    if start != -1 and end != -1 and end > start:
+        return line[start+1:end].strip()
+    return line.strip()
+
+
 def generate_modlist_for_branch(branch_name, output_file):
     """为指定分支生成mod列表"""
     print(f"生成 {output_file}...")
@@ -133,8 +142,10 @@ def generate_modlist_for_branch(branch_name, output_file):
     # 使用packwiz生成mod列表
     run_command("./packwiz refresh")
     packwiz_output = run_command("./packwiz list -v")
+    # 处理每一行，截取括号内容或保留原内容
+    processed_lines = [extract_last_parentheses_content(line) for line in packwiz_output.splitlines()]
     with open(output_file, 'w+') as f:
-        f.write(packwiz_output)
+        f.write('\n'.join(processed_lines) + '\n')
 
     # 添加.jar文件信息
     jar_files_output = run_command("find mods -name \"*.jar\" -exec basename {} \;")
