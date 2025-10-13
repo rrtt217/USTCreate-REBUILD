@@ -131,6 +131,7 @@ def generate_modlist_for_branch(branch_name, output_file):
     switch_to_branch(branch_name)
 
     # 使用packwiz生成mod列表
+    run_command("./packwiz refresh")
     packwiz_output = run_command("./packwiz list -v")
     with open(output_file, 'w') as f:
         f.write(packwiz_output)
