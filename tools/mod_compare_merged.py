@@ -201,7 +201,7 @@ def main():
 
     # 为第二个分支生成mod列表
     mod_list2_file = output_dir / "modlist_2.txt"
-    generate_modlist_for_branch(branch2,mod_list1_file)
+    generate_modlist_for_branch(branch2,mod_list2_file)
 
     # 切回原始分支
     print(f"切回原始分支 {current_branch}...")
