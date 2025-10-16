@@ -21,12 +21,17 @@ import argparse
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s: %(message)s')
 
 #____________ 功能函数 ____________
-def clean_packwiz_text(text: str):
+def clean_packwiz_format(input: str | list[str]) -> list[str]:
     """
     通过移除packwiz特定格式来清理文本。
     例如：XaeroPlus (XaeroPlus-2.28.6+forge-1.20.1-WM1.39.12-MM25.2.10.jar) -> XaeroPlus-2.28.6+forge-1.20.1-WM1.39.12-MM25.2.10.jar
     """
-    mod_list = text.splitlines()
+    mod_list = input.splitlines() if type(input) == str else input
+    try:
+        assert(type(mod_list) == list[str])
+    except AssertionError:
+        logging.error("clean_packwiz_format(): Type Mismatch")
+        return []
     for i in range(len(mod_list)):
         start = mod_list[i].rfind('(')
         end = mod_list[i].rfind(')')
@@ -37,9 +42,14 @@ def clean_packwiz_text(text: str):
     return mod_list
 
 
-def clean_normal_modname(mod_text: str):
+def clean_normal_format(input: str | list[str]) -> list[str]:
     """通过移除启动器特定格式来清理mod文本。"""
-    mod_list = mod_text.splitlines()
+    mod_list = input.splitlines() if type(input) == str else input
+    try:
+        assert(type(mod_list) == list[str])
+    except AssertionError:
+        logging.error("clean_normal_format(): Type Mismatch")
+        return []
     for i in range(len(mod_list)):
         start = mod_list[i].find('[')
         end = mod_list[i].find(']')
@@ -80,7 +90,7 @@ def compare_mods(
         # 查找最佳匹配
         for candidate in remaining_mods2:
             ratio = SequenceMatcher(None, mod, candidate).ratio()
-            logging.info(f"正在比较 {mod} 与 {candidate}: 相似度 {ratio}")
+            logging.debug(f"正在比较 {mod} 与 {candidate}: 相似度 {ratio}")
             if ratio > best_ratio:
                 best_ratio = ratio
                 best_match = candidate
@@ -113,12 +123,12 @@ def run_command(command, capture_output=True):
         sys.exit(1)
 
 
-def get_current_branch():
+def get_current_branch() -> str:
     """获取当前Git分支名称。"""
     return run_command("git branch --show-current").strip()
 
 
-def switch_to_branch(branch_name):
+def switch_to_branch(branch_name : str):
     """切换到指定的Git分支。"""
     logging.info(f"切换到分支 '{branch_name}'...")
     run_command(f"git checkout {branch_name}")
@@ -131,36 +141,27 @@ def restore_git_repo():
 
 def generate_modlist_for_branch(
     branch_name : str,
-    output_file : Path,
     read_modlist_mode : Literal["command","toml"] = "command"
-    ):
-    """为指定的Git分支生成mod列表文件。"""
-    print(f"生成 {output_file}...")
-    output_dir = Path(output_file).parent
-    output_dir.mkdir(parents=True, exist_ok=True)
+    ) -> list[str]:
+    """为指定的Git分支生成mod列表。"""
 
     switch_to_branch(branch_name)
 
     # 使用packwiz生成mod列表
     if read_modlist_mode == "command":
         run_command("./packwiz refresh")
-        packwiz_modlist = run_command("./packwiz list -v")
+        packwiz_modlist = clean_packwiz_format(run_command("./packwiz list -v"))
     elif read_modlist_mode == "toml":
-        packwiz_modlist = ""
+        packwiz_modlist = []
         mods_path = Path("mods")
         for toml_file in mods_path.glob("*.toml"):
             with open(toml_file, 'rb') as f:
-                packwiz_modlist += tomllib.load(f)["filename"]
-                packwiz_modlist += "\n"
-    with open(output_file, 'w+') as f:
-        f.write(packwiz_modlist)
+                packwiz_modlist.append(tomllib.load(f)["filename"])
 
     # 添加.jar文件信息
-    jar_files_modlist = run_command("find mods -name \"*.jar\" -exec basename {} \;")
-    with open(output_file, 'a') as f:
-        f.write(jar_files_modlist)
+    jar_files_modlist = clean_normal_format(run_command("find mods -name \"*.jar\" -exec basename {} \;"))
     restore_git_repo()
-    return output_file
+    return packwiz_modlist+jar_files_modlist
 
 
 def setup_argparse() -> argparse.ArgumentParser:
@@ -257,23 +258,14 @@ def main():
     print(f"开始分支对比: {branch1} vs {branch2}")
 
     # 为第一个分支生成mod列表
-    mod_list1_file = output_dir / "modlist_1.txt"
-    generate_modlist_for_branch(branch1,mod_list1_file)
+    mod_list1 = generate_modlist_for_branch(branch1)
 
     # 为第二个分支生成mod列表
-    mod_list2_file = output_dir / "modlist_2.txt"
-    generate_modlist_for_branch(branch2,mod_list2_file)
+    mod_list2 = generate_modlist_for_branch(branch2)
 
     # 切回原始分支
     print(f"切回原始分支 {current_branch}...")
     switch_to_branch(current_branch)
-
-    # 读取并比较mod列表
-    with open(mod_list1_file, 'r') as f:
-        mod_list1 = clean_normal_modname(f.read())
-
-    with open(mod_list2_file, 'r') as f:
-        mod_list2 = clean_packwiz_text(f.read())
 
     # 执行比较
     common_and_same_version_mods, common_but_different_version_mods, mods_only_in_list1, mods_only_in_list2 = compare_mods(
