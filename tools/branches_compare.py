@@ -124,6 +124,10 @@ def switch_to_branch(branch_name):
     run_command(f"git checkout {branch_name}")
     run_command("git fetch")
 
+def restore_git_repo():
+    """撤销对git管理的文件的更改"""
+    logging.info("重置git仓库......")
+    run_command("git restore .")
 
 def generate_modlist_for_branch(
     branch_name : str,
@@ -155,7 +159,7 @@ def generate_modlist_for_branch(
     jar_files_modlist = run_command("find mods -name \"*.jar\" -exec basename {} \;")
     with open(output_file, 'a') as f:
         f.write(jar_files_modlist)
-
+    restore_git_repo()
     return output_file
 
 
