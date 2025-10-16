@@ -151,7 +151,7 @@ def generate_addon_list(
     ) -> list[str]:
     """为当前的仓库生成‘附加包’（模组、光影包、资源包、数据包）列表。"""
     packwiz_addon_list = []
-    if read_modlist_mode == "command" and addon_type == "mods":
+    if read_modlist_mode == "command" and addon_type == "mods" and os.path.exists("packwiz"):
         # 使用packwiz生成mod列表
         run_command("./packwiz refresh")
         packwiz_addon_list = clean_packwiz_format(run_command("./packwiz list -v"))
