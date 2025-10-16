@@ -26,12 +26,20 @@ def clean_packwiz_format(input: str | list[str]) -> list[str]:
     通过移除packwiz特定格式来清理文本。
     例如：XaeroPlus (XaeroPlus-2.28.6+forge-1.20.1-WM1.39.12-MM25.2.10.jar) -> XaeroPlus-2.28.6+forge-1.20.1-WM1.39.12-MM25.2.10.jar
     """
-    mod_list = input.splitlines() if type(input) == str else input
+    if type(input) == str:
+        mod_list = input.splitlines()
+    elif type(input) == list[str]:
+        mod_list = input
+    else:
+        logging.error("clean_normal_format(): Type Mismatch")
+        return []
+    """
     try:
         assert(type(mod_list) == list[str])
     except AssertionError:
         logging.error("clean_packwiz_format(): Type Mismatch")
         return []
+    """
     for i in range(len(mod_list)):
         start = mod_list[i].rfind('(')
         end = mod_list[i].rfind(')')
@@ -44,12 +52,20 @@ def clean_packwiz_format(input: str | list[str]) -> list[str]:
 
 def clean_normal_format(input: str | list[str]) -> list[str]:
     """通过移除启动器特定格式来清理mod文本。"""
-    mod_list = input.splitlines() if type(input) == str else input
+    if type(input) == str:
+        mod_list = input.splitlines()
+    elif type(input) == list[str]:
+        mod_list = input
+    else:
+        logging.error("clean_normal_format(): Type Mismatch")
+        return []
+    """
     try:
         assert(type(mod_list) == list[str])
     except AssertionError:
         logging.error("clean_normal_format(): Type Mismatch")
         return []
+    """
     for i in range(len(mod_list)):
         start = mod_list[i].find('[')
         end = mod_list[i].find(']')
