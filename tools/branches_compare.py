@@ -146,7 +146,7 @@ def restore_git_repo():
 
 
 def generate_addon_list(
-    addon_type : Literal["mods","shaders","resourcepacks","datapacks"] = "mods",
+    addon_type : Literal["mods","shaderpacks","resourcepacks","datapacks"] = "mods",
     read_modlist_mode : Literal["command","toml"] = "command"
     ) -> list[str]:
     """为当前的仓库生成‘附加包’（模组、光影包、资源包、数据包）列表。"""
@@ -272,8 +272,8 @@ def main():
     switch_to_branch(branch1)
     if args.compare_mods:
         mod_list1 = generate_addon_list(addon_type="mods")
-    if args.compare_shaders:
-        shader_list1 = generate_addon_list(addon_type="shaders")
+    if args.compare_shaderpacks:
+        shader_list1 = generate_addon_list(addon_type="shaderpacks")
     if args.compare_resourcepacks:
         resourcepack_list1 = generate_addon_list(addon_type="resourcepacks")
     if args.compare_datapacks:
@@ -282,8 +282,8 @@ def main():
     switch_to_branch(branch2)
     if args.compare_mods:
         mod_list2 = generate_addon_list(addon_type="mods")
-    if args.compare_shaders:
-        shader_list2 = generate_addon_list(addon_type="shaders")
+    if args.compare_shaderpacks:
+        shader_list2 = generate_addon_list(addon_type="shaderpacks")
     if args.compare_resourcepacks:
         resourcepack_list2 = generate_addon_list(addon_type="resourcepacks")
     if args.compare_datapacks:
@@ -308,19 +308,19 @@ def main():
         print(mods_only_in_list1)
         print("\n仅在第二个分支中的mod：")
         print(mods_only_in_list2)
-    if args.compare_shaders:
-        common_and_same_version_shaders, common_but_different_version_shaders, shaders_only_in_list1, shaders_only_in_list2 = compare_str_lists(
+    if args.compare_shaderpacks:
+        common_and_same_version_shaderpacks, common_but_different_version_shaderpacks, shaderpacks_only_in_list1, shaderpacks_only_in_list2 = compare_str_lists(
         shader_list1, shader_list2, similarity_threshold=args.similarity
         )
         # 输出shader比较结果
         print("相同版本的shader：")
-        print(common_and_same_version_shaders)
+        print(common_and_same_version_shaderpacks)
         print("\n版本不同的shader：")
-        print(common_but_different_version_shaders)
+        print(common_but_different_version_shaderpacks)
         print("\n仅在第一个分支中的shader：")
-        print(shaders_only_in_list1)
+        print(shaderpacks_only_in_list1)
         print("\n仅在第二个分支中的shader：")
-        print(shaders_only_in_list2)
+        print(shaderpacks_only_in_list2)
     if args.compare_resourcepacks:
         common_and_same_version_resourcepacks, common_but_different_version_resourcepacks, resourcepacks_only_in_list1, resourcepacks_only_in_list2 = compare_str_lists(
         resourcepack_list1, resourcepack_list2, similarity_threshold=args.similarity
