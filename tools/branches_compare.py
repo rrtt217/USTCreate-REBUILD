@@ -31,15 +31,8 @@ def clean_packwiz_format(input: str | list[str]) -> list[str]:
     elif type(input) == list[str]:
         mod_list = input
     else:
-        logging.error("clean_normal_format(): Type Mismatch")
-        return []
-    """
-    try:
-        assert(type(mod_list) == list[str])
-    except AssertionError:
         logging.error("clean_packwiz_format(): Type Mismatch")
         return []
-    """
     for i in range(len(mod_list)):
         start = mod_list[i].rfind('(')
         end = mod_list[i].rfind(')')
@@ -59,13 +52,6 @@ def clean_normal_format(input: str | list[str]) -> list[str]:
     else:
         logging.error("clean_normal_format(): Type Mismatch")
         return []
-    """
-    try:
-        assert(type(mod_list) == list[str])
-    except AssertionError:
-        logging.error("clean_normal_format(): Type Mismatch")
-        return []
-    """
     for i in range(len(mod_list)):
         start = mod_list[i].find('[')
         end = mod_list[i].find(']')
@@ -76,54 +62,56 @@ def clean_normal_format(input: str | list[str]) -> list[str]:
     return mod_list
 
 
-def compare_mods(
+def compare_str_lists(
     mod_list1: list[str],
     mod_list2: list[str],
     similarity_threshold: float = 0.8
 ) -> tuple[list[str], list[tuple[str, str]], list[str], list[str]]:
-    """比较两个mod列表并返回差异列表。"""
+    """比较两个字符串列表并返回差异列表。"""
     # 创建副本避免修改原始列表
-    remaining_mods1 = mod_list1.copy()
-    remaining_mods2 = mod_list2.copy()
+    remaining_strings1 = mod_list1.copy()
+    remaining_strings2 = mod_list2.copy()
 
-    common_and_same_version_mods: list[str] = []
-    common_but_different_version_mods: list[tuple[str, str]] = []
+    common_and_same_version_strings: list[str] = []
+    common_but_different_version_strings: list[tuple[str, str]] = []
 
     # 第一阶段：查找完全匹配
-    for mod in mod_list1:
-        if mod in remaining_mods2:
-            common_and_same_version_mods.append(mod)
-            remaining_mods1.remove(mod)
-            remaining_mods2.remove(mod)
+    for item in mod_list1:
+        if item in remaining_strings2:
+            common_and_same_version_strings.append(item)
+            if item in remaining_strings1:
+                remaining_strings1.remove(item)
+            if item in remaining_strings2:
+                remaining_strings2.remove(item)
 
     # 第二阶段：查找相似匹配
-    temp_mods1 = remaining_mods1.copy()
+    temp_items1 = remaining_strings1.copy()
 
-    for mod in temp_mods1:
+    for item in temp_items1:
         best_ratio = 0.0
         best_match = None
 
         # 查找最佳匹配
-        for candidate in remaining_mods2:
-            ratio = SequenceMatcher(None, mod, candidate).ratio()
-            logging.debug(f"正在比较 {mod} 与 {candidate}: 相似度 {ratio}")
+        for candidate in remaining_strings2:
+            ratio = SequenceMatcher(None, item, candidate).ratio()
+            logging.debug(f"正在比较 {item} 与 {candidate}: 相似度 {ratio}")
             if ratio > best_ratio:
                 best_ratio = ratio
                 best_match = candidate
 
         # 检查是否达到相似度阈值
         if best_ratio > similarity_threshold and best_match:
-            common_but_different_version_mods.append((mod, best_match))
-            if mod in remaining_mods1:
-                remaining_mods1.remove(mod)
-            if best_match in remaining_mods2:
-                remaining_mods2.remove(best_match)
+            common_but_different_version_strings.append((item, best_match))
+            if item in remaining_strings1:
+                remaining_strings1.remove(item)
+            if best_match in remaining_strings2:
+                remaining_strings2.remove(best_match)
 
     return (
-        common_and_same_version_mods,
-        common_but_different_version_mods,
-        remaining_mods1,
-        remaining_mods2
+        common_and_same_version_strings,
+        common_but_different_version_strings,
+        remaining_strings1,
+        remaining_strings2
     )
 
 
@@ -155,29 +143,30 @@ def restore_git_repo():
     logging.info("重置git仓库......")
     run_command("git restore .")
 
-def generate_modlist_for_branch(
-    branch_name : str,
+
+
+def generate_addon_list(
+    addon_type : Literal["mods","shaders","resourcepacks","datapacks"] = "mods",
     read_modlist_mode : Literal["command","toml"] = "command"
     ) -> list[str]:
-    """为指定的Git分支生成mod列表。"""
-
-    switch_to_branch(branch_name)
-
-    # 使用packwiz生成mod列表
-    if read_modlist_mode == "command":
+    """为当前的仓库生成‘附加包’（模组、光影包、资源包、数据包）列表。"""
+    packwiz_addon_list = []
+    if read_modlist_mode == "command" and addon_type == "mods":
+        # 使用packwiz生成mod列表
         run_command("./packwiz refresh")
-        packwiz_modlist = clean_packwiz_format(run_command("./packwiz list -v"))
-    elif read_modlist_mode == "toml":
-        packwiz_modlist = []
-        mods_path = Path("mods")
-        for toml_file in mods_path.glob("*.toml"):
-            with open(toml_file, 'rb') as f:
-                packwiz_modlist.append(tomllib.load(f)["filename"])
+        packwiz_addon_list = clean_packwiz_format(run_command("./packwiz list -v"))
+    elif read_modlist_mode == "toml" or addon_type != "mods":
+        addon_path = Path(addon_type)
+        if addon_path.exists():
+            for toml_file in addon_path.glob("*.toml"):
+                with open(toml_file, 'rb') as f:
+                    packwiz_addon_list.append(tomllib.load(f)["filename"])
 
-    # 添加.jar文件信息
-    jar_files_modlist = clean_normal_format(run_command("find mods -name \"*.jar\" -exec basename {} \;"))
+    # 添加原始文件信息
+    file_list_str = run_command(f"find mods -name '{"*.jar" if addon_type == "mods" else "*.zip"}' -printf '%f\n' 2>/dev/null || true")
+    raw_files_modlist = clean_normal_format(file_list_str) if file_list_str else []
     restore_git_repo()
-    return packwiz_modlist+jar_files_modlist
+    return packwiz_addon_list+raw_files_modlist
 
 
 def setup_argparse() -> argparse.ArgumentParser:
@@ -228,6 +217,12 @@ def setup_argparse() -> argparse.ArgumentParser:
         help="是否比较数据包（默认：False）"
     )
     parser.add_argument(
+        "--compare-others",
+        type=bool,
+        default=False,
+        help="是否比较其他文件（默认：False）"
+    )
+    parser.add_argument(
         "--verbose",
         type=bool,
         default=False,
@@ -273,36 +268,87 @@ def main():
 
     print(f"开始分支对比: {branch1} vs {branch2}")
 
-    # 为第一个分支生成mod列表
-    mod_list1 = generate_modlist_for_branch(branch1)
-
-    # 为第二个分支生成mod列表
-    mod_list2 = generate_modlist_for_branch(branch2)
+    # 为第一个分支生成mod,shader,resourcepack,datapack,其他项目列表
+    switch_to_branch(branch1)
+    if args.compare_mods:
+        mod_list1 = generate_addon_list(addon_type="mods")
+    if args.compare_shaders:
+        shader_list1 = generate_addon_list(addon_type="shaders")
+    if args.compare_resourcepacks:
+        resourcepack_list1 = generate_addon_list(addon_type="resourcepacks")
+    if args.compare_datapacks:
+        datapack_list1 = generate_addon_list(addon_type="datapacks")
+    # 为第一个分支生成mod,shader,resourcepack,datapack,其他项目列表
+    switch_to_branch(branch2)
+    if args.compare_mods:
+        mod_list2 = generate_addon_list(addon_type="mods")
+    if args.compare_shaders:
+        shader_list2 = generate_addon_list(addon_type="shaders")
+    if args.compare_resourcepacks:
+        resourcepack_list2 = generate_addon_list(addon_type="resourcepacks")
+    if args.compare_datapacks:
+        datapack_list2 = generate_addon_list(addon_type="datapacks")
 
     # 切回原始分支
     print(f"切回原始分支 {current_branch}...")
     switch_to_branch(current_branch)
 
     # 执行比较
-    common_and_same_version_mods, common_but_different_version_mods, mods_only_in_list1, mods_only_in_list2 = compare_mods(
-        mod_list1, mod_list2, similarity_threshold=args.similarity
-    )
-
-    # 输出结果
     print("\n=== 比较结果 ===")
-    print("相同版本的mod：")
-    print(common_and_same_version_mods)
-    print("\n版本不同的mod：")
-    print(common_but_different_version_mods)
-    print("\n仅在第一个分支中的mod：")
-    print(mods_only_in_list1)
-    print("\n仅在第二个分支中的mod：")
-    print(mods_only_in_list2)
+    if args.compare_mods:
+        common_and_same_version_mods, common_but_different_version_mods, mods_only_in_list1, mods_only_in_list2 = compare_str_lists(
+        mod_list1, mod_list2, similarity_threshold=args.similarity
+        )
+        # 输出mod比较结果
+        print("相同版本的mod：")
+        print(common_and_same_version_mods)
+        print("\n版本不同的mod：")
+        print(common_but_different_version_mods)
+        print("\n仅在第一个分支中的mod：")
+        print(mods_only_in_list1)
+        print("\n仅在第二个分支中的mod：")
+        print(mods_only_in_list2)
+    if args.compare_shaders:
+        common_and_same_version_shaders, common_but_different_version_shaders, shaders_only_in_list1, shaders_only_in_list2 = compare_str_lists(
+        shader_list1, shader_list2, similarity_threshold=args.similarity
+        )
+        # 输出shader比较结果
+        print("相同版本的shader：")
+        print(common_and_same_version_shaders)
+        print("\n版本不同的shader：")
+        print(common_but_different_version_shaders)
+        print("\n仅在第一个分支中的shader：")
+        print(shaders_only_in_list1)
+        print("\n仅在第二个分支中的shader：")
+        print(shaders_only_in_list2)
+    if args.compare_resourcepacks:
+        common_and_same_version_resourcepacks, common_but_different_version_resourcepacks, resourcepacks_only_in_list1, resourcepacks_only_in_list2 = compare_str_lists(
+        resourcepack_list1, resourcepack_list2, similarity_threshold=args.similarity
+        )
+        # 输出resourcepack比较结果
+        print("相同版本的resourcepack：")
+        print(common_and_same_version_resourcepacks)
+        print("\n版本不同的resourcepack：")
+        print(common_but_different_version_resourcepacks)
+        print("\n仅在第一个分支中的resourcepack：")
+        print(resourcepacks_only_in_list1)
+        print("\n仅在第二个分支中的resourcepack：")
+        print(resourcepacks_only_in_list2)
+    if args.compare_datapacks:
+        common_and_same_version_datapacks, common_but_different_version_datapacks, datapacks_only_in_list1, datapacks_only_in_list2 = compare_str_lists(
+        datapack_list1, datapack_list2, similarity_threshold=args.similarity
+        )
+        # 输出datapack比较结果
+        print("相同版本的datapack：")
+        print(common_and_same_version_datapacks)
+        print("\n版本不同的datapack：")
+        print(common_but_different_version_datapacks)
+        print("\n仅在第一个分支中的datapack：")
+        print(datapacks_only_in_list1)
+        print("\n仅在第二个分支中的datapack：")
+        print(datapacks_only_in_list2)
 
     print(f"\n分支对比完成 ({branch1} vs {branch2})!")
-    print("结果文件位置: build/versioncheck/")
-    ls_output = run_command("ls build/versioncheck/")
-    print(ls_output)
 
 
 if __name__ == "__main__":
