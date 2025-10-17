@@ -245,6 +245,12 @@ def setup_argparse() -> argparse.ArgumentParser:
         default=False,
         help="是否显示详细（调试）信息（默认：False）"
     )
+    parser.add_argument(
+        "--diff-only",
+        type=bool,
+        default=False,
+        help="是否只显示不同项目（默认：False）"
+    )
     return parser
 
 
@@ -324,8 +330,9 @@ def main():
         mod_list1, mod_list2, similarity_threshold=args.similarity
         )
         # 输出mod比较结果
-        print("相同版本的mod：")
-        print(common_and_same_version_mods)
+        if not args.diff_only:
+            print("相同版本的mod：")
+            print(common_and_same_version_mods)
         print("\n版本不同的mod：")
         print(common_but_different_version_mods)
         print("\n仅在第一个分支中的mod：")
@@ -337,8 +344,9 @@ def main():
         shader_list1, shader_list2, similarity_threshold=args.similarity
         )
         # 输出shader比较结果
-        print("相同版本的shader：")
-        print(common_and_same_version_shaderpacks)
+        if not args.diff_only:
+            print("相同版本的shader：")
+            print(common_and_same_version_shaderpacks)
         print("\n版本不同的shader：")
         print(common_but_different_version_shaderpacks)
         print("\n仅在第一个分支中的shader：")
@@ -350,8 +358,9 @@ def main():
         resourcepack_list1, resourcepack_list2, similarity_threshold=args.similarity
         )
         # 输出resourcepack比较结果
-        print("相同版本的resourcepack：")
-        print(common_and_same_version_resourcepacks)
+        if not args.diff_only:
+            print("相同版本的resourcepack：")
+            print(common_and_same_version_resourcepacks)
         print("\n版本不同的resourcepack：")
         print(common_but_different_version_resourcepacks)
         print("\n仅在第一个分支中的resourcepack：")
@@ -363,8 +372,9 @@ def main():
         datapack_list1, datapack_list2, similarity_threshold=args.similarity
         )
         # 输出datapack比较结果
-        print("相同版本的datapack：")
-        print(common_and_same_version_datapacks)
+        if not args.diff_only:
+            print("相同版本的datapack：")
+            print(common_and_same_version_datapacks)
         print("\n版本不同的datapack：")
         print(common_but_different_version_datapacks)
         print("\n仅在第一个分支中的datapack：")
@@ -375,8 +385,9 @@ def main():
         common_and_same_other_files, common_but_different_hash_other_files, files_only_in_list1, files_only_in_list2 = compare_index_list(
         others_list1, others_list2
         )
-        print("完全相同的其他文件：")
-        print(common_and_same_other_files)
+        if not args.diff_only:
+            print("完全相同的其他文件：")
+            print(common_and_same_other_files)
         print("文件名相同但哈希值不同的其他文件：")
         print(common_but_different_hash_other_files)
         print("仅在第一个分支中的文件：")
