@@ -168,6 +168,23 @@ def generate_addon_list(
     restore_git_repo()
     return packwiz_addon_list+raw_files_modlist
 
+def generate_index_list(index_toml_path: Path, include_metadata_files: bool = False) -> list[tuple[str,str]]:
+    if os.path.exists("packwiz"):
+        run_command("./packwiz refresh")
+    with open(index_toml_path, "rb") as f:
+        index_file_list = tomllib.load(f)["files"]
+        assert(type(index_file_list) == list)
+        run_command("git restore .")
+        return [(str(index["file"]), str(index["hash"])) for index in index_file_list if include_metadata_files or "metadata" not in index or not index["metadata"]]
+
+def compare_index_list(index_list_1: list[tuple[str,str]], index_list_2: list[tuple[str,str]]) -> tuple[list[str], list[str], list[str], list[str]]:
+    common_and_same_filenames = [index[0] for index in index_list_1 if index in index_list_2]
+    file_names_2 = [index[0] for index in index_list_2]
+    hash_2 = [index[1] for index in index_list_2]
+    common_but_hash_different_filenames = [index[0] for index in index_list_1 if index[0] in file_names_2 and index_list_2 not in hash_2]
+    file_only_in_index_1 = [index[0] for index in index_list_1 if index[0] not in common_and_same_filenames and index[0] not in common_but_hash_different_filenames]
+    file_only_in_index_2 = [index[0] for index in index_list_2 if index[0] not in common_and_same_filenames and index[0] not in common_but_hash_different_filenames]
+    return common_and_same_filenames,common_but_hash_different_filenames,file_only_in_index_1,file_only_in_index_2
 
 def setup_argparse() -> argparse.ArgumentParser:
     """设置并返回argparse解析器。"""
@@ -278,6 +295,8 @@ def main():
         resourcepack_list1 = generate_addon_list(addon_type="resourcepacks")
     if args.compare_datapacks:
         datapack_list1 = generate_addon_list(addon_type="datapacks")
+    if args.compare_others and os.path.exists("index.toml"):
+        others_list1 = generate_index_list(Path("index.toml"))
     # 为第一个分支生成mod,shader,resourcepack,datapack,其他项目列表
     switch_to_branch(branch2)
     if args.compare_mods:
@@ -288,7 +307,8 @@ def main():
         resourcepack_list2 = generate_addon_list(addon_type="resourcepacks")
     if args.compare_datapacks:
         datapack_list2 = generate_addon_list(addon_type="datapacks")
-
+    if args.compare_others and os.path.exists("index.toml"):
+        others_list2 = generate_index_list(Path("index.toml"))
     # 切回原始分支
     print(f"切回原始分支 {current_branch}...")
     switch_to_branch(current_branch)
@@ -347,7 +367,18 @@ def main():
         print(datapacks_only_in_list1)
         print("\n仅在第二个分支中的datapack：")
         print(datapacks_only_in_list2)
-
+    if args.compare_others and others_list1 and others_list2:
+        common_and_same_other_files, common_but_different_hash_other_files, files_only_in_list1, files_only_in_list2 = compare_index_list(
+        others_list1, others_list2
+        )
+        print("完全相同的其他文件：")
+        print(common_and_same_other_files)
+        print("文件名相同但哈希值不同的其他文件：")
+        print(common_but_different_hash_other_files)
+        print("仅在第一个分支中的文件：")
+        print(files_only_in_list1)
+        print("仅在第二个分支的文件：")
+        print(files_only_in_list2)
     print(f"\n分支对比完成 ({branch1} vs {branch2})!")
 
 
