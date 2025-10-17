@@ -168,14 +168,14 @@ def generate_addon_list(
     restore_git_repo()
     return packwiz_addon_list+raw_files_modlist
 
-def generate_index_list(index_toml_path: Path, include_metadata_files: bool = False) -> list[tuple[str,str]]:
+def generate_index_list(index_toml_path: Path, include_metafile_files: bool = False) -> list[tuple[str,str]]:
     if os.path.exists("packwiz"):
         run_command("./packwiz refresh")
     with open(index_toml_path, "rb") as f:
         index_file_list = tomllib.load(f)["files"]
         assert(type(index_file_list) == list)
         run_command("git restore .")
-        return [(str(index["file"]), str(index["hash"])) for index in index_file_list if include_metadata_files or "metadata" not in index or not index["metadata"]]
+        return [(str(index["file"]), str(index["hash"])) for index in index_file_list if include_metafile_files or "metafile" not in index or not index["metafile"]]
 
 def compare_index_list(index_list_1: list[tuple[str,str]], index_list_2: list[tuple[str,str]]) -> tuple[list[str], list[str], list[str], list[str]]:
     common_and_same_filenames = [index[0] for index in index_list_1 if index in index_list_2]
