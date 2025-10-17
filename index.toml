@@ -590,11 +590,6 @@ hash = "0874095a839113e38dd1be0c587f3b23f444ddd38d36a0232ca7cdcaeddcb49e"
 metafile = true
 
 [[files]]
-file = "mods/dragns-valiant-vehicles.pw.toml"
-hash = "89cb0d9d69a24f1c3a3fa1ed236728fc5a8ad3851739b8352e5d0771ce0bcd2d"
-metafile = true
-
-[[files]]
 file = "mods/dragns-vv-refueled.pw.toml"
 hash = "7126c62f3f8cece24800d388b1062544136dc497679536516b2ecd45978290da"
 metafile = true
@@ -626,7 +621,7 @@ metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
-hash = "adb2bda1a252ee89fa32e32e124edd2748b1535887aa0cc76ef9a4c58c9150cc"
+hash = "5440b850efb164ba045f4ca2bc219381608bae0ae31938fb6204a54cf482615e"
 metafile = true
 
 [[files]]
@@ -800,7 +795,7 @@ metafile = true
 
 [[files]]
 file = "mods/moonlight.pw.toml"
-hash = "f71945a7eb0a75ed920225f624978790c2ec75c08c24661e06d5b486722d5b1a"
+hash = "1e3a1a97caff0bce36a008aeb2131dfdccbdf182b4f115d284f2297046a9e379"
 metafile = true
 
 [[files]]
@@ -896,6 +891,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "019d257c815a08a5f1f61aff02ebd0ad6f3657d330dcb30cf288c297d38b10ae"
+metafile = true
+
+[[files]]
+file = "mods/stone-zone.pw.toml"
+hash = "cb33d3af7c6b444e3dbfbd09fe35b2855a6c7440d870a9c77787500ce9fb479b"
 metafile = true
 
 [[files]]
