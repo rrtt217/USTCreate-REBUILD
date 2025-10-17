@@ -297,6 +297,8 @@ def main():
         datapack_list1 = generate_addon_list(addon_type="datapacks")
     if args.compare_others and os.path.exists("index.toml"):
         others_list1 = generate_index_list(Path("index.toml"))
+    else:
+        others_list1 = None
     # 为第一个分支生成mod,shader,resourcepack,datapack,其他项目列表
     switch_to_branch(branch2)
     if args.compare_mods:
@@ -309,6 +311,8 @@ def main():
         datapack_list2 = generate_addon_list(addon_type="datapacks")
     if args.compare_others and os.path.exists("index.toml"):
         others_list2 = generate_index_list(Path("index.toml"))
+    else:
+        others_list2 = None
     # 切回原始分支
     print(f"切回原始分支 {current_branch}...")
     switch_to_branch(current_branch)
