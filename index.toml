@@ -442,7 +442,7 @@ metafile = true
 
 [[files]]
 file = "mods/better-advancements.pw.toml"
-hash = "6d369d90dac6730c6faa243bf73d00d9945e2a932c9c031eb7619d979eaebe8d"
+hash = "1221d568c14447faefe59fa3188014549683c52a373fdd20117793c0cafbebe2"
 metafile = true
 
 [[files]]
@@ -616,12 +616,12 @@ metafile = true
 
 [[files]]
 file = "mods/entityculling.pw.toml"
-hash = "b597014c87e5dba13a0c5942456e07588a7a1c806f83016dd18be4ae4046fcf4"
+hash = "7232f152b9359ae1560afb53573ce7bafd381f42b029e75a955c93933a810bab"
 metafile = true
 
 [[files]]
 file = "mods/every-compat.pw.toml"
-hash = "5440b850efb164ba045f4ca2bc219381608bae0ae31938fb6204a54cf482615e"
+hash = "adb2bda1a252ee89fa32e32e124edd2748b1535887aa0cc76ef9a4c58c9150cc"
 metafile = true
 
 [[files]]
@@ -670,7 +670,7 @@ metafile = true
 
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
-hash = "30827b8be019bddb21a75d16b62afb249400e7723b884eb8db921bf66e123f5e"
+hash = "4bdf4efade5b9448d5257ef4c327e173bb0f37b9ac95b861340109016f4e2de2"
 metafile = true
 
 [[files]]
